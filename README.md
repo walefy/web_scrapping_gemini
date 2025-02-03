@@ -35,3 +35,8 @@ Rode os comando
 ```bash
 docker compose up
 ```
+
+## Considerações finais
+
+O json gerado pela IA vai estar localizado no diretório `/output`.
+O projeto não está pronto, pretendo organizar o código e adicionar uma IA de TTS.

@@ -13,6 +13,7 @@ from src.model import ArticleItem
 from src.service import AIService
 from src.data import agents
 
+load_dotenv()
 
 BASE_URL = os.environ['BASE_URL']
 
@@ -68,7 +69,7 @@ def main():
 
         article_item_soup = BeautifulSoup(driver.page_source, 'html.parser')
         articles_inside_item: ResultSet[Tag] = article_item_soup.find_all('article')
-        articles_inside_item_strs = [validate_tag(a.find('div', { 'class': 'markdown-body' })).text for a in articles_inside_item]
+        articles_inside_item_strs = [a.find('div', { 'class': 'markdown-body' }).text for a in articles_inside_item]
 
         article_item.content = articles_inside_item_strs[0]
         article_item.comments = articles_inside_item_strs[1:]
@@ -91,5 +92,4 @@ def main():
     driver.close()
 
 if __name__ == '__main__':
-    load_dotenv()
     main()
