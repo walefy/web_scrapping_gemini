@@ -39,7 +39,7 @@ def main():
     ai_service = AIService(agent=agents.SUMMARIZE_ARTICLE_AGENT)
 
     os.environ['MOZ_HEADLESS'] = '1'
-    driver = webdriver.Edge()
+    driver = webdriver.Firefox()
     driver.get(BASE_URL)
 
     html = driver.page_source
@@ -80,11 +80,11 @@ def main():
             article_items_with_error.append(article_item)
             print('error, skipping...')
 
-    with open('report.json', 'w', encoding='utf-8') as file:
+    with open('output/report.json', 'w', encoding='utf-8') as file:
         data = [a.model_dump() for a in article_items]
         file.write(json.dumps(data, indent=2, ensure_ascii=False))
 
-    print(f'{'=' * 10} items with error {'=' * 10}')
+    print(f'{'=' * 10} items with error: {len(article_items_with_error)} {'=' * 10}')
     for item in article_items_with_error:
         print(item)
 
