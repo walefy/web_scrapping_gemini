@@ -19,17 +19,17 @@
       "Obrigado Valterpatrick, agradeço o comentário."
     ],
     "summary": {
-      "summary": "O artigo discute a escolha entre MySQL e PostgreSQL para um sistema ERP com múltiplos bancos de dados por cliente. O autor, após analisar os benchmarks e funcionalidades de cada SGBD, optou pelo MySQL devido ao menor consumo de recursos em um cenário com muitos bancos de dados pequenos. A discussão nos comentários se aprofundou, com alguns usuários questionando a metodologia dos testes e a importância da otimização, enquanto outros defendiam o PostgreSQL pela sua robustez e tratamento de erros. A integridade dos dados em situações críticas (como falha de energia) também foi um ponto de debate, com o SQLite sendo apontado como uma alternativa segura. A escolha do banco de dados ideal é altamente dependente do contexto de uso específico.",
+      "summary": "O artigo discute a escolha entre MySQL e PostgreSQL para um sistema ERP online com múltiplos bancos de dados por cliente. Inicialmente, o PostgreSQL parecia a opção mais robusta, mas uma análise detalhada do cenário de uso, com muitos bancos pequenos e recursos limitados, revelou que o MySQL seria mais eficiente em termos de consumo de recursos e custo. A discussão nos comentários gerou bastante debate, com alguns usuários questionando a metodologia de teste do artigo e outros levantando pontos importantes sobre a integridade dos dados em cada sistema, apontando que o PostgreSQL e SQLite tem melhor tratamento de dados em casos de erros. Houve também quem compartilhasse experiências com ambos os bancos de dados, e quem preferisse usar SQLite por ser mais adequado, enquanto outros defendiam que a escolha da tecnologia depende do contexto e da familiaridade da equipe. A discussão foi polarizada, com diferentes pontos de vista sobre qual SGBD seria mais adequado para o caso específico, ressaltando a importância de uma análise criteriosa antes de tomar uma decisão. Alguns comentários criticaram a superficialidade do estudo e a falta de atenção com a configuração do PostgreSQL.",
       "keywords": [
         "MySQL",
         "PostgreSQL",
-        "banco de dados",
         "desempenho",
         "escalabilidade",
-        "integridade de dados",
+        "gerenciamento de dados",
+        "integridade",
         "custo"
       ],
-      "controversy_level": "médio"
+      "controversy_level": "alto"
     }
   },
   {
@@ -38,13 +38,15 @@
     "content": "Fala pessoal! Hoje vim dar um relato de como eu passei por algumas entrevistas sem precisar fazer um teste prático.\nVersão em vídeo com mais detalhes sobre o projeto, dicas e informações sobre os processos seletivos que participei: https://www.youtube.com/watch?v=HF4FAU4hfPM\nVersão resumida no TikTok: https://www.tiktok.com/@kozieldev/video/7465902094038404358\nMotivação\nTodos concordam que essa é uma das partes mais chatas e desgastantes dos processos seletivos, né? Ter que gastar horas e horas pra uma coisa qe você nem tem certeza se vai dar certo.\nCom isso em mente, comecei a reparar em quais tecnologias e ferramentas geralmente eram pedidas nas vagas. Resolvi montar um projeto que contemplasse a maioria delas pra mostrar que eu sabia o que tava sendo pedido.\nDurante os processos seletivos que eu fiz (pra vagas gringas), uma pergunta muito comum era  \"Cite um projeto que você se orgulha/que foi bem desenvolvido\". Nessa pergunta eu já citava o projeto que vou mostrar, e perguntava se poderia utilizar ele como \"teste prático\". Na maioria das vezes os recrutadores aceitavam, e aí ou me aprovavam vendo o github por sí mesmos, ou marcavam uma call pra eu ir passando pelo projeto explicando o que eu tinha feito.\nO Projeto\nA ideia do projeto em si é bem simples, ele é apenas um CRUD de pessoas. Mas o meu foco nele não era a ideia ou o que ele resolvia, e sim as tecnologias e como utilizá-las.\nTentei abranger tecnologias comuns em vagas como sistema de filas, sistema de cacheamentos, testes automatizados, documentação de API, docker, kubernetes, autenticação, entre outros.\nPara quem quiser dar uma conferida, o projeto se encontra nesse repositório: https://github.com/KozielGPC/person-crud\nPS: Nos videos explico um pouco mais detalhadamente sobre o projeto, esse processo todo e umas dicas também. É isso! Espero que esse tipo de conteúdo ajude mais pessoas a economizarem tempo em seus processos seletivos, e também motive a criar projetos legais pra por no github!",
     "comments": [],
     "summary": {
-      "summary": "O artigo descreve a estratégia de um desenvolvedor para evitar testes práticos em entrevistas de emprego. Ele criou um projeto abrangente que demonstra diversas tecnologias e o utilizou como portfólio para substituir os testes tradicionais. O projeto, um CRUD de pessoas, foi desenvolvido com foco nas tecnologias e ferramentas requisitadas no mercado, como filas, cache, testes automatizados e documentação de API. Ao apresentar o projeto em entrevistas, ele conseguiu que os recrutadores avaliassem suas habilidades diretamente, através do código no GitHub ou em discussões técnicas. O autor enfatiza que o objetivo não era a complexidade da ideia do projeto, mas a sua abrangência tecnológica, visando otimizar o tempo gasto em processos seletivos e incentivar a criação de projetos para o portfólio.",
+      "summary": "O autor compartilha sua estratégia de usar um projeto pessoal, um CRUD de pessoas, para evitar testes práticos em entrevistas de emprego. Ele focou em implementar diversas tecnologias e ferramentas comuns em vagas de emprego, como sistemas de filas, cache, testes automatizados, documentação de API, Docker, Kubernetes e autenticação. Em vez de realizar um teste prático, o autor apresentava seu projeto e o utilizava como exemplo de suas habilidades, geralmente através de uma análise do código no GitHub ou em uma apresentação. O objetivo principal é otimizar o processo seletivo, evitando gastar horas em testes e demonstrando suas habilidades por meio de um projeto prático. O autor também disponibiliza seu projeto no GitHub para consulta e demonstração.",
       "keywords": [
         "entrevista",
-        "teste prático",
         "projeto",
+        "teste prático",
+        "tecnologias",
         "github",
-        "tecnologias"
+        "processo seletivo",
+        "carreira"
       ],
       "controversy_level": "baixo"
     }
@@ -57,7 +59,7 @@
       "tem bons conteúdos na web sobre engenharia de prompt e isso é a chave pra criação de bons prompts"
     ],
     "summary": {
-      "summary": "O artigo discute como melhorar a qualidade do código gerado por IA através de prompts mais detalhados. A principal recomendação é fornecer o máximo de contexto possível, incluindo informações claras sobre o que se deseja construir, referências a componentes existentes, exemplos de interfaces e documentação técnica relevante. O autor compartilha um boilerplate e demonstra como o fornecimento de mais informações pode levar a resultados mais eficazes. Um usuário comentou sobre a existência de bons conteúdos sobre engenharia de prompt, que é a chave para bons prompts.",
+      "summary": "O artigo discute como melhorar a qualidade do código gerado por inteligência artificial, enfatizando a importância de um prompt bem elaborado e com o máximo de contexto possível. O autor sugere fornecer à IA informações detalhadas, como explicações claras do que se deseja construir, referências a componentes existentes, exemplos de interfaces semelhantes e documentação técnica relevante. A discussão nos comentários sugere que a engenharia de prompt é fundamental para obter bons resultados.",
       "keywords": [
         "IA",
         "geração de código",
@@ -78,15 +80,15 @@
       "Muito interessante. Depois da enxurrada de informações da última semana, esse texto conciso e direto ponto ajuda a entender bastante o que de fato trouxe de inovação."
     ],
     "summary": {
-      "summary": "O artigo discute os avanços da DeepSeek na área de Inteligência Artificial, destacando a arquitetura Multi-head Latent Attention (MLA) como uma inovação que melhora a eficiência dos modelos de IA. A tecnologia MLA permite que os modelos processem informações de forma mais rápida e com menor custo computacional, mantendo o desempenho. O CEO da Anthropic reconhece o impacto das inovações da DeepSeek, incluindo melhorias no gerenciamento de cache e na mistura de especialistas. O autor do artigo enfatiza que otimizar tecnologias existentes é fundamental para o progresso da IA. Um comentário concorda que o texto é conciso e informativo, ajudando a entender as inovações da DeepSeek.",
+      "summary": "O artigo discute a inovação da DeepSeek na área de Inteligência Artificial, com o modelo DeepSeek-V3 e sua arquitetura Multi-head Latent Attention (MLA). Essa arquitetura promove um processamento mais rápido e eficiente, através da compressão de informações e redução do cache de Chave-Valor. O CEO da Anthropic, Dario Amodei, destaca a importância dessas inovações para a eficiência da engenharia em IA. O artigo enfatiza que o progresso não está apenas no aumento do tamanho dos modelos, mas na otimização da arquitetura, tornando a IA mais acessível e sustentável. Houve apenas um comentário que considera o artigo conciso e esclarecedor após muitas informações da semana.",
       "keywords": [
-        "Inteligência Artificial",
         "DeepSeek",
         "MLA",
         "eficiência",
+        "IA",
         "inferência",
-        "custo computacional",
-        "inovação"
+        "cache KV",
+        "otimização"
       ],
       "controversy_level": "baixo"
     }
@@ -104,15 +106,15 @@
       "Respondendo as suas perguntas:\n1 - Nesse ultimo mês eu tirei um pouco mais de 1 salario.\n2 - Eu gasto cerca 29 reais de hospedagem por mês e 40 anualmente pelo domínio. Os custos dos comandos são cobertos pelo programa de statups da microsoft.\nQuando eu privo o bot apenas para assinantes premiums vende bem mais, mas a base de usuários cresce mais lentamente.\nEu estou optando por receber menos assinantes mensais em troca de uma base de usuários maior, para gerar como tráfego para outros projetos.\nA minha taxa de cancelamento mensal de assinaturas é de 2% então esse valor tende a subir mensalmente sem muitas perdas.\nExtra:\nInfelizmente a dor que a Maria resolve não são tão urgentes atualmente, visto que a maioria dos comandos são de I.A, então estou apostando em variações da Maria que resolvam uma dor específica e mais forte.\nEssa semana devo soltar o MVP da variação da Maria que estou construindo e pretendo descobrir se escolhi a abordage correta.\n(Se der errado eu vou só privar pra usuários privados e viva o capitalismo KKKKKKK)"
     ],
     "summary": {
-      "summary": "O artigo relata a experiência de um desenvolvedor com a criação e escalabilidade de um bot para WhatsApp, chamado MariaBot, que alcançou 40 mil usuários. Inicialmente, o bot utilizava uma API não oficial, mas após um bloqueio da Meta, foi migrado para a API oficial. O autor compartilha aprendizados sobre crescimento orgânico, importância da interação com a comunidade e a necessidade de validar ideias com MVPs. Os comentários da discussão se concentraram no interesse em aprender mais sobre o uso da API oficial do WhatsApp, com alguns usuários relatando dificuldades na aprovação do perfil comercial pela Meta. O autor respondeu algumas dúvidas técnicas e financeiras, revelando que o projeto gera uma pequena renda passiva, enquanto ele o usa para divulgar outros projetos. A discussão também abordou os desafios de encontrar dores específicas para resolver com o bot.",
+      "summary": "O artigo descreve a trajetória de um bot de WhatsApp criado por um desenvolvedor, desde sua concepção inicial usando APIs não oficiais até a migração para a API oficial após um bloqueio da Meta. O autor detalha o crescimento do projeto, que alcançou 40 mil usuários e 1.4 milhão de mensagens trocadas, e compartilha aprendizados sobre a importância de redes sociais, atendimento humanizado, testes de MVP e estratégias de crescimento orgânico. Os comentários dos usuários expressam interesse em desenvolver bots para WhatsApp, buscando informações sobre a experiência com a API oficial e o processo de aprovação da Meta. O autor responde, detalhando sua experiência e planejando um futuro post sobre o assunto. Há também perguntas sobre os ganhos financeiros e custos do bot. O autor explica que o bot gera uma renda mensal modesta e que a prioridade atual é o crescimento da base de usuários para direcionar tráfego a outros projetos. A discussão se mantém informativa e colaborativa, sem sinais de conflito.",
       "keywords": [
-        "bot WhatsApp",
+        "WhatsApp",
+        "bot",
         "API oficial",
-        "crescimento orgânico",
         "automação",
-        "renda passiva",
-        "MVP",
-        "Meta API"
+        "crescimento",
+        "usuários",
+        "monetização"
       ],
       "controversy_level": "baixo"
     }
@@ -126,7 +128,7 @@
       "Bom dia, primeiramente muito obrigado e bom eu vou efetuar essas modificações que você sugeriu,achei bem melhor."
     ],
     "summary": {
-      "summary": "O artigo apresenta uma nova API para verificação de emails, com o objetivo de identificar endereços maliciosos em um vasto banco de dados de spam, atualizado em tempo real. A API é gratuita, com um limite de uso generoso, e pode ser implementada em formulários de cadastro ou para verificar listas de emails. Um usuário parabenizou pelo projeto e sugeriu melhorias na interface, como um link mais acessível para a documentação da API. O autor do artigo respondeu positivamente, indicando que implementará as sugestões.",
+      "summary": "O artigo apresenta uma nova API para verificação de emails, com foco em identificar endereços maliciosos através de um banco de dados atualizado constantemente. A API pode ser utilizada em formulários de cadastro ou para validar listas de emails, oferecendo praticidade ao usuário que apenas precisa adaptar o código em sua aplicação, sem a necessidade de baixar informações. O acesso é gratuito, com limite de uso generoso, e requer uma chave de acesso fornecida no site. Um usuário elogiou o projeto e sugeriu melhorias na interface, como uma página dedicada listando as APIs com acesso rápido às documentações, uma sugestão que foi bem recebida pelo autor.",
       "keywords": [
         "API",
         "verificação de email",
@@ -145,14 +147,15 @@
     "content": "Oi, pessoal! Tudo bem?\nSempre fui fascinado por bandeiras, geografia e por decorar nomes de cidades e identificar lugares no mapa. Era, e ainda sou, viciado em jogos como GeoGuessr, Worldle e Sporcle!\nInspirado por essa paixão, decidi criar o GeoQuiz!\nAtualmente, já temos mais de 100 quizzes no site, divididos em três categorias:\n\nMatch: Jogos onde você precisa relacionar pares em duas colunas. Por exemplo, neste quiz, de um lado estão os nomes dos estados brasileiros e, do outro, as bandeiras correspondentes. O desafio é acertar todas as combinações!\nLista: Jogos onde você deve escrever uma lista de itens que pertencem a uma categoria. Por exemplo, lista de todos os presidentes do Brasil e lista de todos os países da América do Sul\nRanking: Jogos semelhantes aos de lista, mas onde os itens precisam ser identificados em uma sequência específica. Por exemplo, ranking dos clubes de futebol com mais títulos da Libertadores.\n\nPara quem gosta de competição, ao completar um quiz, você ganha pontos. Recentemente, lancei o sistema de ranking! Quando você está logado, seus resultados são vinculados ao seu perfil, onde você pode acompanhar seu progresso e comparar com outros jogadores.\nA próxima coisa que está na minha cabeça de adicionar são os desafios diários tipo Worldle.\nPor exemplo: todos os dias, um país é escolhido, e o desafio será adivinhar qual é com base no contorno das fronteiras. Esses desafios valerão pontos extras para o ranking geral, e quanto mais dias seguidos você acertar (daily streaks), mais bônus de pontuação ganha!\nEnfim, está sendo bem legal desenvolver e ver o GeoQuiz crescer. Adoraria ouvir o feedback de vocês! O que acharam da ideia? Alguma sugestão ou quiz que gostariam de ver no site?\nDá uma olhada no GeoQuiz e me conta! :)\nUm abraço!",
     "comments": [],
     "summary": {
-      "summary": "O autor criou um site de quizzes interativos chamado GeoQuiz, com foco em geografia, bandeiras e capitais. O site oferece três tipos de jogos: 'Match' para relacionar pares, 'Lista' para listar itens de uma categoria, e 'Ranking' para organizar itens em sequência. Os usuários ganham pontos ao completar os quizzes, com um sistema de ranking para acompanhar o progresso. O autor planeja adicionar desafios diários com bônus de pontuação. Ele busca feedback da comunidade sobre a ideia e sugestões para novos quizzes.",
+      "summary": "O autor do artigo apresenta o 'GeoQuiz', um site com quizzes interativos sobre geografia, bandeiras e capitais, inspirado por jogos como GeoGuessr e Worldle. O site oferece diferentes tipos de quizzes: Match (relacionar pares), Lista (escrever itens de uma categoria) e Ranking (itens em sequência). Os usuários ganham pontos ao completar os quizzes, com um sistema de ranking para acompanhar o progresso. O autor planeja adicionar desafios diários, como o estilo Worldle, para pontuações extras. Ele convida os leitores a experimentar o site e fornecer feedback.",
       "keywords": [
         "geografia",
         "quizzes",
         "bandeiras",
         "capitais",
         "jogos",
-        "educacional"
+        "ranking",
+        "interativo"
       ],
       "controversy_level": "baixo"
     }
@@ -169,15 +172,35 @@
       "Instala uma distro linux em dualboot vc só precisa ter espaço em disco pra isso, com o dualboot vc reinicia seu PC e ele pergunta se vc quer iniciar o windows ou o linux, quando seu pai for usar ele vai para o windows e vc usa o linux pra programar, recentemente eu comecei a ensinar minha filha a programar e passei pra ela um notebook de uns 10 anos atrás pra ela, isntalei o Linux Lite:\nhttps://www.linuxliteos.com/index.html\nÉ uma distro super leve focada em computadores com configurações menores. Roda super bem e está sendo mais que o suficiente pra ela criar o primeiro blog dela.\nOBS: pode parecer complexo instalar dualboot mas não é, quando vc iniciar o instalador (geralmente instalado num pendriver), o instalador vai te dar as opções:\n\nInstalar Linux Lite ao lado do Windows (dualboot)\nApagar HD inteiro e instalar Linux Lite no HD inteiro.\n\nQuando você selecionar instalar ao lado, ele vai perguntar quantos GB do HD vc vai separar pro linux e quanto vai deixar pro windows, é tudo bem intuitivo.\nSe for tentar e surgir alguma dúvida, posta aqui que tento ajudar."
     ],
     "summary": {
-      "summary": "O autor relata uma experiência incomum ao tentar executar um projeto Next.js, encontrando erros que não pareciam relacionados ao software, mas sim a problemas no seu HD externo. Inicialmente, mensagens de erro vagas e a impossibilidade de deletar arquivos específicos levaram a uma investigação sobre possíveis bugs no Next.js. No entanto, a causa raiz foi diagnosticada como corrupção de arquivos devido a problemas no HD externo, indicado por alertas do sistema e análise com CrystalDisk. Após tentativas de reparo, o problema foi parcialmente resolvido, mas a corrupção se mostrou generalizada, afetando vários projetos. A discussão nos comentários sugere que o problema pode ser o fim da vida útil do HD, com um usuário indicando que HDs podem apresentar falhas por desgaste. Outros sugerem problemas com o Windows ou o uso de WSL ou Linux para desenvolvimento. A maioria dos comentários foram construtivos, oferecendo sugestões e dicas ao autor.",
+      "summary": "O artigo relata uma experiência incomum de um desenvolvedor que enfrentou problemas ao tentar rodar um projeto Next.js. Inicialmente, mensagens de erro genéricas e a impossibilidade de apagar a pasta `node_modules` o levaram a suspeitar de bugs no framework. Após muita investigação, descobriu que a causa raiz era a corrupção do seu HD externo, onde armazenava os projetos, devido a um problema físico não tratado. Os comentários corroboram a hipótese de falha de hardware, mencionando a vida útil de SSDs e possíveis problemas no sistema operacional Windows. Uma sugestão para usar Linux em dualboot foi dada como uma alternativa, mas o autor mencionou limitações de hardware e o uso compartilhado do computador. A discussão, embora tenha uma pequena divergência sobre a origem do problema, manteve um tom amigável e colaborativo, com sugestões e recomendações de recursos.",
       "keywords": [
-        "HD externo",
-        "corrupção de arquivos",
-        "node_modules",
-        "erros de disco",
-        "Windows",
         "hardware",
-        "desgaste de SSD"
+        "corrupção",
+        "HD",
+        "SSD",
+        "node_modules",
+        "windows",
+        "linux"
+      ],
+      "controversy_level": "baixo"
+    }
+  },
+  {
+    "title": "Estagiários e \"criar\" um setor de desenvolvimento",
+    "link": "https://www.tabnews.com.br/flipcruz182/estagiarios-e-criar-um-setor-de-desenvolvimento",
+    "content": "Bom dia /Boa tarde/ Boa noite, como vão? Espero que bem!\nApenas para contextualizar uma questão que estamos levantando na empresa. Trabalho aqui a muitos anos (quase um cargo de confiança), cuidando de treinamentos a clientes, e suporte técnico, nos últimos 12 meses, tenho feito a \"gestão\" dos projetos de desenvolvimento da empresa, pois temos parceiros que desenvolvem pra nós, um deles para gestão de projetos, outro para gestão de controle de acesso, ambos em nuvem, um app mobile, e atualmente uma API para comunicação entre o sistema web e um leitor NFC\nNão somos uma empresa grande e com R$ 1M disponível para investir em tecnologia, então esses nossos parceiros são pessoas de confiança, não software houses, com acordos comerciais fechados pelo projeto em si, ou as vezes por horas trabalhadas, uma das minhas funções é melhorar isso, criar roadmaps, e trabalhar paralelamente aos devs para mensurar as proporções dos projetos, acompanhar, testar e organizar as entregas.\nTenho em mente que contratar um dev fullstack, não faz sentido, baseado até mesmo em um post recente aqui, não precisamos entrar nessa questão, e eu estou estudando engenharia da computação, estou no segundo semestre, mas não pretendo me tornar programador, a ideia dos estagiários, sempre foi para otimizar processos dentro da empresa, auxiliar na manutenção dos produtos já existentes, e claro, agregar conhecimento a nossa equipe, não sei se fui bem claro mas nós temos vários projetos já iniciados e eu preciso de ajuda para estruturar tudo isso, pois estamos caminhando para uma empresa que não apenas comercializa produtos , mas que também irá disponibilizar novas tecnologias, automações, e etc, isso faz parte de nosso dia a dia.\nA pergunta é, faz sentido trazermos estagiários para esse tipo de demanda? Nós normalmente buscamos técnicos em eletrônica, para agregar na manutenção dos produtos e automação, mas surgiu esse pensamento de trazer mais alguém, para auxiliar, talvez a pessoa não programe no início, mas estará em contato diário com desenvolvedores experientes, tanto da velha guarda, quanto mais atualizados, e claro, se percebermos que a pessoa se interessou pelo business da empresa, ele terá autonomia para participar cada vez mais, e criar ferramentas.\nO texto pode parecer um pouco confuso, mas é justamente porque temos tantas possibilidades, temos contato com tanta gente, novas parcerias todos os dias, que novas mentes, vindas de outro cenário, com certeza tem poder de agregar muito.",
+    "comments": [
+      "Estagiário, por lei, só pode trabalhar para a empresa por no máximo 2 anos. Depois vc contrata, ou ele vai embora e leva o conhecimento junto.\nMe parece mais que vc precisa de um \"faz tudo\", se está falando de tecnlogias e automações novas, dificilmente o estagiário vai ter a vivencia necessária para resolver o problema, dependendo do tamanho do problema.\nNo final das contas, quando algo explodir, quem é que vai segurar o rojão?"
+    ],
+    "summary": {
+      "summary": "O artigo discute a possibilidade de contratar estagiários para auxiliar na gestão e desenvolvimento de projetos de tecnologia em uma empresa que está expandindo sua atuação. O autor, responsável pela gestão de projetos e treinamentos, busca otimizar processos e estruturar a área de tecnologia com a ajuda de novos talentos. A ideia é que os estagiários colaborem na manutenção de produtos, participem de projetos e agreguem conhecimento à equipe, tendo contato com desenvolvedores experientes. Um dos comentários questiona a viabilidade da contratação de estagiários para resolver problemas complexos, visto que o tempo de contrato é limitado e a experiência pode ser insuficiente para lidar com as demandas da empresa, mencionando a necessidade de um profissional \"faz tudo\".",
+      "keywords": [
+        "estagiários",
+        "desenvolvimento",
+        "tecnologia",
+        "automação",
+        "projetos",
+        "manutenção"
       ],
       "controversy_level": "baixo"
     }
@@ -188,7 +211,7 @@
     "content": "Existe uma forma de você receber dinheiro para divulgar seu produto\nO objetivo principal de um negócio é gerar lucro, ou seja, obter um retorno financeiro maior do que o dinheiro investido. É nisso que acredito. Apesar dessa definição, vejo que a maioria dos empreendedores iniciantes não possuem esse olhar financeiro. Eles querem ganhar dinheiro, sim. Mas não dominam conceitos básicos.\nNa edição de hoje da Newsletter do Moa, eu decidi falar sobre uma técnica que faz você ganhar dinheiro para fazer marketing, ao invés de gastar.\nTecnologia não é fim\nEstava conversando com um colega dia desses. Ele começou como programador, evoluiu na carreira e, então, resolveu abrir uma startup. Nessa startup. ele era CTO. Depois de alguns anos tentando, acabou que a startup quebrou e ele teve que voltar ao mercado de trabalho. Ele voltou, de peito erguido. Não mais como CTO, nem mesmo como programador. Mas, sim, como um “novato” na área de produto. Ele decidiu dar alguns passos atrás na carreira (leia-se: ganhar menos) para migrar de área.\nClaro, não é uma migração tão brusca. Tecnologia e produto andam lado a lado. Mas, ainda assim, são disciplinas diferentes. Perguntei o motivo de ele ter decidido fazer essa mudança de rota. “Porque eu queria estar mais perto do business”.\nEu, inconscientemente, também fiz caminho parecido. Comecei como programador, exerci a função durante anos, até que decidi que queria ganhar mais dinheiro do que ganhava, e também trabalhar menos do que trabalhava. Na época, o único caminho que enxergava para isso era subir um nível na hierarquia. Esse movimento, consequentemente, me levou a ficar mais próximo da área de negócios.\nFiz essa introdução para dizer que, via de regra, o programador é apenas um implementador, que está longe das decisões de negócio. O programador sabe exatamente como fazer o que precisa ser feito. Dificilmente sabe o porquê daquilo precisar ser feito. Falta, ao programador, conceitos básicos de produto, finanças, administração, marketing, contabilidade… Falta ao programador entender que tecnologia é meio para se atingir determinado objetivo. Tecnologia não é um fim em si mesmo.\nO tema que vou abordar hoje já foi abordado anteriormente, mas, mais pela ótica do marketing. Hoje vou abordar este tema novamente, mas sobre a ótica financeira da coisa.\nO conceito de empreendedorismo\nA palavra \"empreender\" tem origem no latim \"imprehendere\" ou \"inprehendere\", e significa \"tomar, apanhar, agarrar\". A raiz dessa palavra se relaciona com a ideia de iniciativa, de ação. A palavra “empreendedorismo” chegou ao português através do francês \"entreprendre\", que quer dizer \"empreender\" ou \"realizar algo\", e passou a ser usada para descrever pessoas que tomam iniciativas, que assumem riscos e criam algo novo.\nNo século XVIII, o termo \"entrepreneur\" começou a ser amplamente utilizado na França por um economista chamado Richard Cantillon. Ele o usava para descrever indivíduos que assumiam riscos financeiros em busca de lucro, como comerciantes e inovadores.\nPodemos definir o empreendedor como uma pessoa que toma risco para inovar, criar algo novo, geralmente em busca de uma recompensa financeira.\nNa dinâmica capitalista, o que acontece é que o investidor entrega capital na mão do empreendedor, que usa essa grana para criar um empreendimento inovador. Através dessa inovação, o empreendedor gera valor para seus clientes e é remunerado por isso. O empreendedor, então, devolve uma parte pequena do lucro ao investidor (juros), e coloca o resto da grana no bolso.\nUma das siglas mais usadas por investidores é o tal do ROI. ROI é a abreviação do termo “return of investment”. O investidor busca o ROI alocando dinheiro em empreendimentos. O empreendedor busca o ROI usando o dinheiro para inovar. No fim do dia, ambos estão buscando oportunidades para maximizar o retorno sobre investimento.\nO conceito de CAC e LTV\nEsse assunto é batido. Eu sei que você já ouviu dezenas de vezes a importância de calcular o CAC e o LTV da sua operação. Mas, talvez, você não tenha ouvido sobre o conceito dessa maneira.\nCAC é a sigla para o termo “custo de aquisição de cliente\". Essa métrica informa o quanto você gasta para atrair um novo cliente para seu empreendimento. Ao contrário do que muitas pessoas pensam, esse custo vai além do investimento em tráfego pago. Entram na conta, também, custos com ferramentas, salários, comissões, equipamentos, etc.\nLTV é a sigla para o termo “lifetime value”. Aqui estamos falando do total de dinheiro que esse cliente adquirido gasta com o seu empreendimento. A matemática aqui é simples: para que meu empreendimento faça sentido, financeiramente falando, é preciso que o LTV seja maior que o CAC.\nO número mágico que o mercado prega é que a proporção entre LTV e CAC deve ser 3 para 1. Se for menos que isso, sua operação é ineficiente. Se for mais que isso, sua operação está perdendo a oportunidade de crescer.\nA explicação do porquê dessa proporção é simples: dividindo seu LTV em três partes, usamos a primeira parte para cobrir os custos de aquisição do cliente, a segunda parte para cobrir os custos de entregar o produto/serviço ao cliente, e a terceira parte a gente coloca no bolso, como lucro. De forma bem simplista, esse é o racional.\nE se o seu CAC fosse negativo?\nSim, isso mesmo que você leu. E se, ao invés de você gastar R$ 1.000 para adquirir um cliente, você gastasse -R$ 1.000. “Moacir, não dá pra gastar menos mil reais”. Ok. E se você GANHASSE R$ 1.000 para adquirir um cliente? Não tem muito sentido, né? Calma, você vai entender…\nSó existem três verdades na vida: a morte, os impostos, e o fato de que o CPM vai aumentar. CPM é a sigla para o termo “cost per mile impressions”. Essa é a métrica que mede quanto custa para você entregar um anúncio para mil pessoas.\nEu comecei no marketing digital em 2019. Nessa época, lembro de pagar cerca de R$ 3 por lead adquirido, quando fazíamos lançamentos pela DevPro. Dois anos depois, em 2021, estávamos sofrendo para conseguir manter o custo abaixo dos R$ 7. Em dois anos, o custo para adquirir um lead (e consequentemente um cliente) dobrou. Como o tráfego pago era nosso maior custo, disparado, posso dizer que o CAC dobrou em menos de dois anos.\nCorta para 2024. Aqui no Tintim, se eu conseguir pagar R$ 20 no lead qualificado, eu estou feliz. De 2021 para 2024, o custo por lead TRIPLICOU. Ok, nichos diferentes, público-alvo diferente. O público-alvo que busco atingir com o Tintim é mais nichado e, mais qualificado e, consequentemente, mais caro. Ainda assim, podemos dizer que o custo para adquirir um cliente usando tráfego pago só vem aumentando ao longo dos últimos anos.\nA explicação para isso é simples: COVID-19. Por conta da pandemia, grandes empresas precisaram entrar para o online. Como a compra de mídia paga acontece via leilão, a consequência é que, no fim do dia, você deixou de disputar a atenção do usuário com o infoprodutor que trabalha só de bermuda no próprio quarto e passa a concorrer diretamente com a Coca-Cola. Tarefa árdua, né?\nNum cenário em que o custo por lead só cresce, fica cada vez mais difícil ter lucro. Agora, e se eu te dissesse que você não precisa ter lucro? Sim, isso mesmo que você ouviu. O primeiro passo para conquistar um CAC negativo é vender sem ter lucro.\nPhilip Kotler, o papa do marketing, diz que atrair um novo cliente é cinco vezes mais caro do que vender novamente para um cliente antigo. Partindo dessa premissa, a lógica é simples: a primeira venda serve como isca para atrair um cliente.\nA ideia aqui é usar um produto barato e, de preferência, que a compra aconteça por impulso e que a venda aconteça de forma “self-service”. O objetivo não é lucrar, mas, sim, usar essa estrutura para custear a formação de base de clientes e leads.\nImagine uma loja que venda colchões. Uma ideia para zerar esse CAC é, por exemplo, fazer uma super promoção de travesseiro. Uma venda fácil de fazer, de impulso e self-service. Se essa venda acontece sem prejuízo, a loja acaba criando, de graça, uma base de pessoas interessadas em comprar colchões.\nA partir do momento que você coleta os dados de clientes e interessados, o custo para manter um relacionamento com essas pessoas é marginal. Sendo assim, seu lucro vai acontecer na próxima venda que você fizer. Detalhe: essa venda vai acontecer a um CAC zero, já que, nessa venda, você não precisou gastar para adquirir esse cliente.\n“Ok, temos CAC zero, mas e o CAC negativo?”. Ele acontece se você tiver lucro na primeira venda. Não é o ideal, mas, pode acontecer. Digo que não é o ideal porque o certo a fazer é pegar todo o lucro da primeira venda e reinvestir. Seu lucro deve acontecer, de fato, nas próximas vendas.\nPor que SaaS é o melhor modelo de negócio do mundo?\nEu já disse isso outras vezes, e posso afirmar com propriedade, pois vivo isso, na prática, com o Tintim, desde 2023.\nNo Tintim, nós não temos um produto de entrada, como expliquei acima. Pelo menos, não ainda. Isso porque o próprio Tintim é o produto de entrada.\nNão entendeu? Explico.\nDevido ao fato de o SaaS ser uma recorrência mensal, todo mês acontece uma nova venda. O fato de eu vender o mesmo produto todo mês para o mesmo cliente permite que, com apenas um produto, eu aplique toda a lógica descrita nesse texto. Quer ver só?\nImagine que a mensalidade de um SaaS seja R$ 100. Imagine, também, que o tempo médio de LTV do cliente dentro desse SaaS seja de 12 meses. Imagine, também, que o CAC desse SaaS seja R$ 400. Temos, aqui, uma proporção exata de 3 para 1 no LTV/CAC.\nNesse cenário, no ato da venda, eu tenho um prejuízo de R$ 300, já que eu gasto R$ 400 para adquirir um cliente que vai me pagar, no primeiro mês, somente R$ 100. A magia começa a acontecer a partir do segundo mês. “Sem eu fazer nada\", meu cliente volta a me pagar R$ 100. O mesmo acontece no terceiro e no quarto mês. Pronto! Cobrimos o CAC. A partir daí, o que vier é lucro. E é justamente isso que vai acontecer nos próximos 8 meses.\nPor conta da recorrência, eu posso vender o mesmo produto várias vezes. Por conta de eu vender um produto só, eu consigo dedicar todos meus esforços em apenas uma estrutura de vendas. Eu faço marketing para apenas um produto. Eu treino o time de vendas para vender apenas um produto. Eu treino o time de implantação para implantar apenas um produto.\nEm resumo: eu simplifico minha operação, mantenho o foco somente em uma iniciativa, e maximizo o potencial de lucro.\nSeu trabalho é encontrar oportunidades de aumentar o retorno sobre o investimento\nMeu objetivo, com esse texto, é te convidar a pensar com esse olhar financeiro.\nSe a sua empresa não possui investidor externo, saiba que o investidor é você. Talvez você não esteja investindo dinheiro, mas, com certeza, está investindo tempo. Existe um custo de oportunidade na sua empreitada.\nSeu papel, como empreendedor (e também como investidor), é buscar formas de maximizar o retorno sobre o seu investimento. Pode ser vendendo apenas um produto com lucro, pode ser vendendo um produto para criar base e outro produto para extrair lucro…\nDesde que você respeite seus valores, como você vai fazer isso, pouco importa.\n\n✉️ Esta foi mais uma edição da Newsletter do Moa!\n💪🏻 O meu objetivo com essa newsletter é ajudar profissionais de tecnologia que desejam desenvolver uma visão mais estratégica.\nAlém disso, pretendo também compartilhar outras coisas, como um pouco dos bastidores da construção de um negócio SaaS, as minhas opiniões e meus aprendizados. A ideia geral é ser uma documentação pública e estruturada dos meus pensamentos e aprendizados ao longo dos anos.\nPortanto, se você se interessa por soft-skill, desenvolvimento pessoal, empreendedorismo e opiniões relativamente polêmicas, sugiro que você se inscreva para receber as próximas edições. ⬇️\nToque aqui para se inscrever",
     "comments": [],
     "summary": {
-      "summary": "O artigo discute estratégias de marketing com foco em retorno financeiro, em vez de apenas custos. O autor explora conceitos como CAC (Custo de Aquisição de Cliente) e LTV (Lifetime Value), enfatizando a importância de um LTV maior que o CAC para um negócio ser sustentável. É proposto o conceito de CAC negativo, onde a primeira venda pode gerar lucro ou, no mínimo, atrair clientes para futuras compras. O modelo de negócio SaaS é apresentado como um exemplo eficaz, devido à recorrência mensal que permite uma otimização da aquisição de clientes ao longo do tempo. O autor incentiva os empreendedores a buscar oportunidades de maximizar o retorno sobre seus investimentos, seja com um produto único ou com uma estratégia de atração e lucro em etapas. O objetivo é apresentar um olhar financeiro sobre o marketing, onde o lucro deve ser o foco principal.",
+      "summary": "O artigo discute estratégias de marketing com foco em retorno financeiro, abordando a importância de calcular o Custo de Aquisição de Cliente (CAC) e o Lifetime Value (LTV). O autor propõe a ideia de usar um produto de entrada a baixo custo para atrair clientes, visando lucro nas vendas subsequentes, e defende o modelo de negócio SaaS devido à sua recorrência e potencial de maximização do retorno sobre investimento. A discussão enfatiza a necessidade de o empreendedor ter uma visão financeira para otimizar o investimento de tempo e dinheiro. Não houve comentários, portanto não há controvérsia ou diferentes opiniões sobre o assunto.",
       "keywords": [
         "marketing",
         "empreendedorismo",
@@ -202,41 +225,19 @@
     }
   },
   {
-    "title": "Estagiários e \"criar\" um setor de desenvolvimento",
-    "link": "https://www.tabnews.com.br/flipcruz182/estagiarios-e-criar-um-setor-de-desenvolvimento",
-    "content": "Bom dia /Boa tarde/ Boa noite, como vão? Espero que bem!\nApenas para contextualizar uma questão que estamos levantando na empresa. Trabalho aqui a muitos anos (quase um cargo de confiança), cuidando de treinamentos a clientes, e suporte técnico, nos últimos 12 meses, tenho feito a \"gestão\" dos projetos de desenvolvimento da empresa, pois temos parceiros que desenvolvem pra nós, um deles para gestão de projetos, outro para gestão de controle de acesso, ambos em nuvem, um app mobile, e atualmente uma API para comunicação entre o sistema web e um leitor NFC\nNão somos uma empresa grande e com R$ 1M disponível para investir em tecnologia, então esses nossos parceiros são pessoas de confiança, não software houses, com acordos comerciais fechados pelo projeto em si, ou as vezes por horas trabalhadas, uma das minhas funções é melhorar isso, criar roadmaps, e trabalhar paralelamente aos devs para mensurar as proporções dos projetos, acompanhar, testar e organizar as entregas.\nTenho em mente que contratar um dev fullstack, não faz sentido, baseado até mesmo em um post recente aqui, não precisamos entrar nessa questão, e eu estou estudando engenharia da computação, estou no segundo semestre, mas não pretendo me tornar programador, a ideia dos estagiários, sempre foi para otimizar processos dentro da empresa, auxiliar na manutenção dos produtos já existentes, e claro, agregar conhecimento a nossa equipe, não sei se fui bem claro mas nós temos vários projetos já iniciados e eu preciso de ajuda para estruturar tudo isso, pois estamos caminhando para uma empresa que não apenas comercializa produtos , mas que também irá disponibilizar novas tecnologias, automações, e etc, isso faz parte de nosso dia a dia.\nA pergunta é, faz sentido trazermos estagiários para esse tipo de demanda? Nós normalmente buscamos técnicos em eletrônica, para agregar na manutenção dos produtos e automação, mas surgiu esse pensamento de trazer mais alguém, para auxiliar, talvez a pessoa não programe no início, mas estará em contato diário com desenvolvedores experientes, tanto da velha guarda, quanto mais atualizados, e claro, se percebermos que a pessoa se interessou pelo business da empresa, ele terá autonomia para participar cada vez mais, e criar ferramentas.\nO texto pode parecer um pouco confuso, mas é justamente porque temos tantas possibilidades, temos contato com tanta gente, novas parcerias todos os dias, que novas mentes, vindas de outro cenário, com certeza tem poder de agregar muito.",
-    "comments": [
-      "Estagiário, por lei, só pode trabalhar para a empresa por no máximo 2 anos. Depois vc contrata, ou ele vai embora e leva o conhecimento junto.\nMe parece mais que vc precisa de um \"faz tudo\", se está falando de tecnlogias e automações novas, dificilmente o estagiário vai ter a vivencia necessária para resolver o problema, dependendo do tamanho do problema.\nNo final das contas, quando algo explodir, quem é que vai segurar o rojão?"
-    ],
-    "summary": {
-      "summary": "O artigo discute a possibilidade de contratar estagiários para auxiliar na gestão e manutenção de projetos de desenvolvimento em uma empresa que busca expandir sua atuação tecnológica. O autor, responsável pela gestão dos projetos, explora a ideia de trazer estagiários para otimizar processos, auxiliar na manutenção de produtos e agregar conhecimento à equipe, apesar de não pretender formar novos programadores. A principal questão levantada é se a contratação de estagiários seria adequada para as demandas da empresa, que envolvem a estruturação de projetos e a introdução de novas tecnologias. Os comentários apontam para a limitação do tempo de contrato de estágio e questionam se estagiários teriam a experiência necessária para lidar com problemas complexos e novas tecnologias. Há uma sugestão de que a empresa talvez precise de um profissional mais experiente, um \"faz tudo\", ao invés de estagiários.",
-      "keywords": [
-        "estagiários",
-        "desenvolvimento",
-        "projetos",
-        "tecnologia",
-        "automação",
-        "gestão",
-        "manutenção"
-      ],
-      "controversy_level": "baixo"
-    }
-  },
-  {
     "title": "OpenAI anuncia agente capaz de realizar pesquisas avançadas",
     "link": "https://www.tabnews.com.br/NewsletterOficial/openai-anuncia-agente-capaz-de-realizar-pesquisas-avancadas",
     "content": "O Deep Research é capaz de realizar pesquisas aprofundadas e fornecer respostas detalhadas de forma autônoma. Segundo a empresa, o sistema pode planejar e executar uma trajetória de várias etapas para buscar informações, ajustando-se em tempo real conforme necessário.\nDiferente dos modelos tradicionais que apenas geram texto, o Deep Research exibe um resumo do processo em uma barra lateral, incluindo citações e detalhes sobre a metodologia utilizada. Os usuários podem fornecer contexto adicional por meio de texto, imagens e arquivos, como PDFs e planilhas. O tempo estimado para a formulação das respostas varia entre 5 e 30 minutos.\nEm testes de benchmark no Humanity’s Last Exam, que avalia respostas para perguntas de nível especialista, o modelo atingiu 26,6% de precisão ao utilizar ferramentas de navegação e Python, superando significativamente os 3,3% do GPT-4o. O recém-lançado o3-mini alcançou 13,3%.\nA OpenAI reconhece algumas limitações do Deep Research, incluindo possibilidade de alucinações, dificuldade para distinguir fontes confiáveis de rumores e incerteza na classificação da precisão de suas respostas.\nO recurso estará disponível inicialmente para assinantes Pro, que pagam 200 dólares mensais, com um limite de 100 consultas por mês. A empresa também planeja um acesso restrito para usuários dos planos Plus, Team e Enterprise, destacando que a ferramenta exige alto poder computacional. No futuro, versões mais rápidas e eficientes deverão permitir limites de uso ampliados para assinantes pagos.",
     "comments": [],
     "summary": {
-      "summary": "O artigo discute o lançamento do Deep Research pela OpenAI, um agente de IA capaz de realizar pesquisas avançadas e autônomas, superando modelos tradicionais como o GPT-4o em testes de precisão. A ferramenta permite a inclusão de contexto adicional através de diversos formatos de arquivo e apresenta um resumo do processo de pesquisa com citações e detalhes metodológicos.  Inicialmente disponível para assinantes Pro, o sistema apresenta algumas limitações como alucinações, dificuldade na distinção de fontes confiáveis e incerteza na classificação da precisão das respostas. Futuramente, o acesso será expandido para outros planos, com a expectativa de versões mais eficientes que permitam limites de uso maiores.",
+      "summary": "O artigo aborda o lançamento do Deep Research pela OpenAI, um agente capaz de realizar pesquisas avançadas de forma autônoma. O sistema se destaca por sua capacidade de planejar e executar etapas de pesquisa, ajustando-se em tempo real, além de fornecer resumos do processo com citações e detalhes metodológicos. Em testes, o modelo superou o GPT-4o em precisão ao responder perguntas de nível especialista, embora ainda apresente limitações como alucinações e dificuldade em distinguir fontes confiáveis. O acesso inicial será restrito a assinantes Pro, com planos futuros para expandir para outros planos pagos, devido à alta demanda computacional.",
       "keywords": [
         "OpenAI",
         "Deep Research",
         "pesquisa",
-        "IA",
+        "inteligência artificial",
         "GPT-4o",
-        "autônomo",
-        "assinantes"
+        "autônomo"
       ],
       "controversy_level": "baixo"
     }
@@ -247,7 +248,7 @@
     "content": "Fala, galera! Tudo certo?\nQuero compartilhar com vocês um projeto que estou desenvolvendo junto com um amigo. Identificamos na nossa empresa a necessidade de uma alternativa mais acessível para inferência de IA, já que os custos com o ChatGPT estavam ultrapassando R$25 mil por mês. Sabíamos que o GPT-4 era mais potente do que realmente precisávamos e buscamos uma solução mais viável para o nosso modelo de negócios.\nConsideramos o GROQ, que tem uma velocidade absurda, mas não conseguimos acesso à assinatura Business. Sem muitas opções viáveis no mercado, decidimos construir nosso próprio servidor de inferência utilizando duas RTX 4090. No entanto, para lidar com nossa demanda de cerca de 40 mil requisições diárias, a performance não foi satisfatória.\nForam 20 dias intensos, trabalhando 18 horas por dia, até conseguirmos estruturar o (RaillsAI)[https://www.raillsai.com/playground] com modelos open-source. Todo o backend foi desenvolvido em Django (Python), enquanto o frontend ficou por conta do React.\nAtualmente, rodamos um modelo Vision 11B da LLaMA, mas já estamos planejando a implementação de modelos maiores, como 90B e 405B, modelos da DeepSeek e qualquer um aberto a comunidade.\nConseguimos ter um custo de Input bem inferior ao mercado, o preco de output do 11b esta em 3,5USD pelo custo operacional mas estamos viabilizando e investindo para ser menor e ganharmos mais concorrencia.\nPara pagamentos, utilizamos Stripe junto com dj-stripe, o que facilitou bastante a integração de assinaturas e transações. Já para a API, apostamos no Django REST Framework (DRF), que nos permitiu construir rapidamente as rotas necessárias.\nSeguimos evoluindo e fortalecendo a infraestrutura. Hoje, conseguimos suportar mais de 1.500 requisições por segundo, com um tempo médio de resposta de 7 segundos para outputs de 500 tokens.\nEstamos animados com os próximos passos e abertos a feedbacks! 🚀\nTecnologias:\nDjango,\nDjangoRestFramework, # APis e Rotas\nCelery, # Fluxo de metricas e Pagamentos\nRedis, # Cache e Mensageria",
     "comments": [],
     "summary": {
-      "summary": "O artigo apresenta um projeto de plataforma brasileira para inferência de IA, desenvolvida para lidar com altos custos de APIs como ChatGPT. A equipe construiu uma infraestrutura própria utilizando duas RTX 4090 e modelos open-source, com backend em Django e frontend em React. A plataforma, RaillsAI, visa oferecer uma alternativa mais econômica, com foco em modelos como o Vision 11B da LLaMA, planejando implementar modelos ainda maiores. Atualmente, a plataforma suporta mais de 1.500 requisições por segundo com tempo médio de resposta de 7 segundos para outputs de 500 tokens e está aberta a feedbacks. A plataforma utiliza Stripe para pagamentos e Django REST Framework para API, conseguindo um custo de input inferior ao mercado, buscando constantemente a redução dos custos de output.",
+      "summary": "Um desenvolvedor compartilhou a criação de uma plataforma brasileira de inferência de IA, motivada pelos altos custos de serviços como o ChatGPT. A solução utiliza modelos open-source e infraestrutura própria com RTX 4090, buscando uma alternativa mais acessível. A plataforma, chamada RaillsAI, foi construída com Django e React, suportando um volume considerável de requisições por segundo e com planos de expansão para modelos maiores. O objetivo é oferecer um custo inferior ao mercado. A infraestrutura utiliza tecnologias como Django REST Framework, Celery e Redis para funcionalidades como API, métricas, pagamentos e cache.",
       "keywords": [
         "IA",
         "inferência",
@@ -268,13 +269,13 @@
       "Muito bom amigo! Uma dúvida: você pensa em expandir o projeto para incluir outras plataformas de música? Gosta ideia de descobrir músicas de forma aleatória ou por indicação, mas algumas músicas ou até mesmo álbuns que são muito bons(ou artistas novos) não tem ou demoram um tempo para poder chegar no spotify."
     ],
     "summary": {
-      "summary": "O artigo descreve a criação de uma newsletter diária de recomendações musicais geradas por IA, chamada 'Hear Before You Sleep'. O autor utilizou AI Agents e o framework Pydantic AI para desenvolver o projeto, que resultou em recomendações inesperadamente boas, incluindo gêneros musicais antes desconhecidos pelo autor, como o Afrobeat. O código fonte do projeto foi disponibilizado no GitHub. Nos comentários, um usuário expressa satisfação com a iniciativa e pergunta sobre a possibilidade de expandir o projeto para outras plataformas de música, já que nem todas as músicas e artistas estão no Spotify. Não há discordância ou polêmica, sendo a discussão considerada de baixo nível de controvérsia.",
+      "summary": "O autor criou um projeto chamado 'Hear Before You Sleep', uma newsletter diária de recomendações musicais geradas por inteligência artificial. O projeto surgiu da vontade de aprender sobre AI Agents e da insatisfação com as playlists do Spotify, resultando na descoberta de novos gêneros musicais, como Afrobeat. O código-fonte está disponível no GitHub, utilizando Pydantic AI. Um comentário questiona sobre a possibilidade de expandir o projeto para outras plataformas de música, devido à demora em alguns lançamentos chegarem ao Spotify.",
       "keywords": [
         "AI Agents",
-        "recomendações musicais",
+        "música",
+        "recomendações",
         "newsletter",
         "Pydantic AI",
-        "música",
         "Spotify",
         "Afrobeat"
       ],
@@ -292,15 +293,15 @@
       "Eu passo pela mesma situação que você, sou dev júnior com muita responsabilidade e nenhum pleno ou sênior na equipe. Existe um superior encarregado de gerenciar, mas ele tem conhecimento limitado na área de desenvolvimento. Tenho os mesmos questionamentos e alguns sentimentos que você. Sei que estou perdendo algo por não ter alguém mais experiente dando feedback. No mais, sigo dando o meu melhor e buscando me desenvolver, e sempre mantenho em mente que algumas coisas que costumo fazer não são a melhor forma de resolver, e vou precisar corrigir esses maus hábitos."
     ],
     "summary": {
-      "summary": "O artigo relata a experiência de um desenvolvedor júnior que trabalha como único desenvolvedor em uma empresa focada em conectividade, destacando a grande autonomia e responsabilidade que possui. Apesar de valorizar o aprendizado e o desenvolvimento de habilidades de resolução de problemas, ele expressa preocupação com a falta de feedback técnico de um desenvolvedor mais experiente, temendo adquirir maus hábitos. Os comentários de outros usuários revelam experiências semelhantes, com muitos relatando o desafio de trabalhar sem mentoria, mas também reconhecendo o potencial de crescimento acelerado que essa situação proporciona. Alguns mencionam a importância de buscar feedback externo e de construir um portfólio sólido. A discussão demonstra um sentimento comum entre desenvolvedores juniores em posições de grande responsabilidade, com foco no autoaperfeiçoamento e na busca por conhecimento.",
+      "summary": "O artigo relata a experiência de um desenvolvedor júnior que, após um ano em uma empresa focada em conectividade, tornou-se o único responsável pelo desenvolvimento web. Ele descreve a autonomia e responsabilidade que adquiriu, cuidando de aplicações internas e da infraestrutura, o que o forçou a desenvolver habilidades de organização e resolução de problemas. No entanto, ele expressa a falta de feedback técnico de um desenvolvedor mais experiente, temendo adquirir hábitos ruins. Apesar disso, ele é grato pela oportunidade e pelo aprendizado. Os comentários de outros usuários compartilham experiências semelhantes, ressaltando o crescimento adquirido em situações de alta responsabilidade e a necessidade de buscar alternativas para o feedback técnico, seja por meio de outras pessoas da área ou ferramentas online. Muitos também concordam com a importância de aproveitar o aprendizado nessas situações.",
       "keywords": [
-        "desenvolvimento júnior",
+        "desenvolvedor júnior",
         "autonomia",
         "falta de feedback",
         "aprendizado",
         "crescimento profissional",
-        "responsabilidade",
-        "equipe pequena"
+        "desafios",
+        "experiência"
       ],
       "controversy_level": "baixo"
     }
@@ -317,15 +318,15 @@
       "o brabo 🚀🚀🚀🚀"
     ],
     "summary": {
-      "summary": "O artigo apresenta o Constel, um novo aplicativo de rede social descentralizada, construído sobre o protocolo ATProto, o mesmo utilizado pelo BlueSky. O aplicativo foca em fotos e vídeos, oferecendo funcionalidades básicas como login integrado, curtidas, visualização de feed e pesquisa. O autor menciona que o projeto está em desenvolvimento iterativo e com código aberto no GitHub. Os comentários dos usuários expressam curiosidade sobre a escolha do protocolo, comparando-o com o ActivityPub do Mastodon. Há também opiniões sobre o desafio de lançar uma nova rede social em um mercado dominado por gigantes, mas o autor enfatiza que o projeto é um desafio pessoal e uma forma de aprendizado com as APIs. A recepção é positiva, com incentivo ao projeto.",
+      "summary": "O artigo apresenta o Constel, um aplicativo descentralizado de fotos e vídeos construído sobre o protocolo ATProto, o mesmo do BlueSky. O autor destaca que o aplicativo já possui funcionalidades como login integrado, curtidas, feed e pesquisa, aproveitando a infraestrutura do BlueSky. O desenvolvimento é iterativo, com o objetivo de adicionar mais funcionalidades. Nos comentários, um usuário questiona a escolha do ATProto em detrimento do ActivityPub (Mastodon), mas o autor explica que optou pelo ATProto devido à sua documentação e facilidade de uso. Outro comentário aponta a dificuldade de competir com redes sociais já estabelecidas, mas o autor reconhece que o projeto é mais um desafio de aprendizado. A discussão demonstra apoio ao projeto, com um tom positivo.",
       "keywords": [
         "Constel",
         "ATProto",
+        "BlueSky",
         "descentralização",
         "rede social",
-        "BlueSky",
         "aplicativo",
-        "desenvolvimento"
+        "fotos e vídeos"
       ],
       "controversy_level": "baixo"
     }
@@ -343,7 +344,7 @@
       "Quando ele existir!\nSe tu criou um componente provavelmente ele precisa ser testado nem que seja um simples snapshot."
     ],
     "summary": {
-      "summary": "A discussão gira em torno da importância e do momento ideal para testar componentes React. O autor do artigo questiona a utilidade dos testes, especialmente os que verificam apenas a renderização. Em resposta, um usuário explica que testes, embora possam parecer desnecessários inicialmente, são cruciais para projetos maiores, pois atuam como 'guard-rails', prevenindo bugs e facilitando a refatoração. Ele sugere testar componentes após criá-los ou ao encontrar um bug. Outros comentários reforçam a necessidade de testes para garantir a qualidade do software, especialmente em diferentes navegadores, e para documentar o funcionamento de componentes em projetos com várias pessoas. Um usuário também menciona a importância de testes estratégicos, focando no que realmente importa, e não em testar tudo. Além disso, foi compartilhado um link para um vídeo sobre testes de componentes para auxiliar o autor. A conversa indica um consenso geral sobre a relevância dos testes para o desenvolvimento de software, apesar de haver diferentes opiniões sobre a melhor forma de abordá-los.",
+      "summary": "O artigo aborda a dúvida sobre quando testar componentes React, questionando se todo componente precisa de testes. Os comentários convergem na importância dos testes automatizados, mesmo que inicialmente pareçam um gasto de tempo. Usuários destacam que testes documentam o código, facilitam refatorações e economizam tempo ao longo do projeto, especialmente em projetos grandes e com múltiplos desenvolvedores. É mencionado que testes unitários são importantes para componentes isolados, enquanto testes E2E simulam o comportamento do usuário. A discussão enfatiza que testes são essenciais para garantir a qualidade do código e evitar dores de cabeça futuras com bugs em produção, sendo um investimento a longo prazo. Um usuário menciona a necessidade de testar em diferentes navegadores para compatibilidade. Apesar de um usuário reconhecer a dificuldade inicial com testes, todos concordam que testes são importantes e necessários, indicando que não há polêmica, mas sim uma direção de consenso.",
       "keywords": [
         "testes automatizados",
         "componentes React",
@@ -351,7 +352,7 @@
         "testes E2E",
         "refatoração",
         "bugs",
-        "qualidade de software"
+        "qualidade do código"
       ],
       "controversy_level": "baixo"
     }
@@ -378,15 +379,15 @@
       "Entendi onde você quer chegar. Nesse caso, teríamos que implementar um CLI para nossa plataforma, onde você poderia fazer login através de um token ou com usuário e senha e, em seguida, enviar o projeto para nossa plataforma para o deploy. Porém, a automação do CI/CD e suas regras poderiam ser configuradas por você."
     ],
     "summary": {
-      "summary": "A discussão gira em torno de uma plataforma em desenvolvimento para hospedagem de aplicações web e APIs, com foco na simplicidade do deploy. O criador busca feedback sobre usabilidade e funcionalidades, enquanto usuários levantam questões sobre precificação, planos, integração com Git (especialmente repositórios privados e CI/CD), além da infraestrutura de hospedagem. Alguns sugerem o uso de ferramentas existentes e parcerias, enquanto outros apreciam a abordagem de desenvolver uma solução própria. A questão da autenticação via GitHub e a estratégia de monitoramento de mudanças para deploy automático também são debatidas, com sugestões de uso de webhooks. O projeto parece promissor, com uma boa recepção inicial, mas com pontos de atenção a serem desenvolvidos.",
+      "summary": "O artigo apresenta uma plataforma em desenvolvimento para hospedagem de aplicações web e APIs, com foco em simplicidade no deploy via upload de arquivos ZIP. Os comentários iniciam com sugestões de ferramentas como Buildpacks para identificação automática de código e elogios à praticidade da plataforma. O autor esclarece planos de preços, que serão fixos em dólares, e aborda a construção de um data center próprio no Canadá, visando reduzir a dependência de terceiros. Surgem questões sobre a autenticação via GitHub, automação de deploy via repositório Git e suporte a frameworks como SvelteKit. O autor detalha o uso de VPS no momento, com planos de migrar para o data center próprio, e explica como o deploy é automatizado. A discussão prossegue sobre como monitorar branches para o deploy e a possibilidade de usar webhooks e uma CLI para projetos privados, o que gera debates sobre escalabilidade e opções de CI/CD. Em resumo, a discussão é sobre os desafios de construção e escalabilidade da plataforma, com sugestões para otimizar processos e abranger diferentes ferramentas e fluxos de trabalho.",
       "keywords": [
         "hospedagem de aplicações",
         "deploy",
         "plataforma",
+        "buildpacks",
         "CI/CD",
-        "datacenter",
-        "webhooks",
-        "GitHub Actions"
+        "data center",
+        "github actions"
       ],
       "controversy_level": "médio"
     }
@@ -402,15 +403,15 @@
       "Com certeza, programação ainda vai existir por muito tempo. A diferença agora é que troquei o Ctrl+C / Ctrl+V pelo Ctrl+Alt+I."
     ],
     "summary": {
-      "summary": "O artigo discute uma pesquisa salarial no setor de tecnologia, revelando um cenário misto com aumentos, estabilidade e reduções salariais em diferentes cargos. Uma parcela significativa de profissionais de TI experimentou queda nos salários, enquanto outros obtiveram aumentos acima da inflação. Os comentários refletem preocupação com a desvalorização de desenvolvedores juniores, atribuindo-a a um hype em torno da IA e à supervalorização da tecnologia como meio de enriquecimento fácil. Há divergência sobre o impacto da IA na substituição de programadores: alguns veem a IA como ferramenta auxiliar, enquanto outros acreditam que ela reduz a demanda por criadores de código, com impacto na oferta de vagas. Apesar das mudanças, a maioria concorda que a programação continuará relevante.",
+      "summary": "O artigo aborda um estudo que revela variações salariais no setor de tecnologia em 2024, com quedas para 25% dos profissionais, enquanto 28% tiveram aumentos acima da inflação. Os comentários expressam preocupação com a redução de salários para desenvolvedores júnior, atribuindo-a ao hype da IA e à possível supervalorização da tecnologia como solução para todos os problemas. Há uma divisão de opiniões: alguns acreditam que a IA não substituirá o trabalho dos desenvolvedores, enquanto outros apontam para uma diminuição na demanda por criadores de código, influenciada tanto pela IA quanto pela promessa de altos salários com pouco esforço. Uma parcela dos usuários enfatiza que a programação ainda é relevante e vai além do aspecto financeiro.",
       "keywords": [
-        "salário",
+        "salários",
+        "TI",
         "IA",
         "desenvolvedores",
-        "mercado",
-        "programação",
-        "tecnologia",
-        "emprego"
+        "mercado de trabalho",
+        "redução salarial",
+        "aumento salarial"
       ],
       "controversy_level": "médio"
     }
@@ -432,15 +433,13 @@
       "É uma alternativa,  mas queria algo mais específico. Ja usei muito obsidian mas hoje uso outra ferramenta para organizar minhas notas."
     ],
     "summary": {
-      "summary": "O autor do artigo busca uma ferramenta para gerenciar um projeto individual, similar ao Jira, mas menos complexa. Ele especifica a necessidade de funcionalidades como cadastro de épicos, histórias, controle de backlog e sprints. Várias sugestões foram feitas nos comentários, incluindo o uso do GitHub Projects, que foi recomendado por muitos usuários devido à sua integração com repositórios e funcionalidades Kanban, além de ser gratuito. Outros usuários propuseram abordagens mais simples, como o uso de arquivos de texto e scripts personalizados, enquanto outros mencionaram ferramentas como Linear App, Notion, Taiga e Obsidian. O autor mencionou que testou e optou por uma ferramenta open-source chamada Super Productivity que atendeu suas necessidades.",
+      "summary": "O autor do artigo busca uma ferramenta de gerenciamento de projetos similar ao Jira, mas mais simples para um projeto individual. Ele menciona ter dificuldades com ferramentas complexas e também com a abordagem do Trello. Os comentários sugerem diversas alternativas: GitHub Projects, que é integrado ao repositório, e Linear App, focado em equipes de desenvolvimento, foram recomendados. Alguns usuários também sugeriram soluções mais manuais, como o uso de arquivos txt e markdown, enquanto outros mencionaram Taiga e Notion. O autor atualizou o post dizendo que optou pelo Super Productivity, por ser uma opção intermediária. A discussão não apresentou grandes divergências, com sugestões diversas e um consenso sobre a necessidade de uma ferramenta adequada às necessidades do usuário.",
       "keywords": [
-        "gerenciamento de projeto",
-        "ferramenta de acompanhamento",
-        "jira",
-        "github projects",
-        "kanban",
-        "produtividade",
-        "open-source"
+        "Jira",
+        "gerenciamento de projetos",
+        "GitHub Projects",
+        "Linear app",
+        "Super Productivity"
       ],
       "controversy_level": "baixo"
     }
@@ -455,14 +454,15 @@
       "Java é uma boa escolha, porque é o novo Cobol. Tem vaga em todo lugar, e por muito tempo ainda. Continua codando, não para.\nSe me permite uma sugestão, quebra a função main em funções menores, e cria um record com os dados básicos. Um código estruturado em pequenos blocos fica mais legível (não sempre, mas ajuda).\nTrabalhei anos com Java. Aí passei a fazer os testes em Groovy e quando voltava pro Java o System.out começou a sobrar. Depois de algum tempo acabei criando uma helper e dupliquei os métodos print, println e printf como estáticos para usar com static-import. Mesmo usando soh logger, as vezes precisava do print. Pra digitar a IDE até ajuda com autocomplete, mas ficar vendo esse System.out me incomoda bastante até hoje. Que coisa mal projetada da linguagem..."
     ],
     "summary": {
-      "summary": "O artigo apresenta um projeto de calculadora de calorias em Java, desenvolvido por um iniciante na linguagem como forma de aprendizado e cuidado com a saúde. O autor utilizou dados e fórmulas com auxílio de um estudante de nutrição. Os comentários oferecem feedback construtivo, com elogios ao progresso do autor, sugestões de melhorias no código (como evitar duplicação, usar comparações case-insensitive e refatorar para funções menores), além de dicas sobre boas práticas de programação. Há uma discussão sobre a eficiência de `printf()` e `println()`, a importância de validar entradas de dados e a necessidade de comentar o porquê, ao invés do o quê o código faz. Não há controvérsia, apenas sugestões e incentivos ao autor.",
+      "summary": "O artigo apresenta um projeto de calculadora de calorias desenvolvido em Java por um iniciante na linguagem. O objetivo foi unir o aprendizado de programação com o cuidado pessoal com a alimentação. O autor recebeu feedback positivo sobre a qualidade do código para um iniciante, com sugestões de melhorias focadas em otimização, como evitar repetição de código, usar métodos mais eficientes para comparação de strings e simplificar cálculos. Além disso, foi recomendado refatorar o código em funções menores para melhorar a legibilidade e criar uma estrutura de dados para os dados básicos. Um dos comentários destaca que Java ainda tem mercado de trabalho. O autor do post agradeceu o feedback e disse que vai usar as sugestões para melhorar o código.",
       "keywords": [
         "Java",
-        "calculadora de calorias",
+        "calculadora",
+        "calorias",
         "programação",
-        "nutrição",
-        "código",
-        "feedback"
+        "alimentação",
+        "TMB",
+        "código"
       ],
       "controversy_level": "baixo"
     }
@@ -476,13 +476,15 @@
       "Show! Gostei da sua visão, faz sentido.\nValeu pelo feedback."
     ],
     "summary": {
-      "summary": "O artigo discute a diferença entre formatadores de código (formatters) e analisadores de código (linters), argumentando que formatadores cuidam do estilo do código, aplicando regras como uso de aspas e espaçamento, enquanto linters analisam o código para garantir qualidade e boas práticas, como a presença de atributos 'alt' em tags 'img'. Os comentários concordam com a visão do autor, complementando que a formatação garante consistência entre editores e o lint ajuda a manter boas práticas já estabelecidas por comunidades e equipes. A discussão não apresenta controvérsias, com todos os participantes concordando com os pontos apresentados e reforçando sua importância.",
+      "summary": "O artigo discute a diferença entre formatadores de código (como o Prettier) e linters (como o ESLint). Formatadores são responsáveis por aplicar regras de estilo, como o uso de aspas simples ou duplas e a quantidade de espaços para indentação. Eles atuam de forma automatizada, apenas executando as regras sem questioná-las, tornando o processo mais rápido. Linters, por outro lado, analisam o código para garantir a qualidade, seguindo boas práticas e padrões. Eles podem emitir avisos ou erros, como a ausência do atributo 'alt' em tags 'img'. O autor compartilha sua visão de que formatadores lidam com estilo e linters com qualidade, e a discussão visa consolidar esse entendimento. Os comentários concordam com a visão apresentada, complementando com a ideia de que a formatação facilita a edição em diferentes editores e o lint ajuda a manter boas práticas já discutidas em comunidades e equipes,  com o objetivo de alcançar objetivos em comum.",
       "keywords": [
         "formatter",
         "linter",
-        "qualidade de código",
-        "regras de estilo",
-        "boas práticas"
+        "estilo de código",
+        "qualidade do código",
+        "regras",
+        "Prettier",
+        "ESLint"
       ],
       "controversy_level": "baixo"
     }
@@ -602,15 +604,15 @@
       "Ótimo artigo, novos projetos virão com essa API incrível.\nConceito de API First é ótimo."
     ],
     "summary": {
-      "summary": "O artigo apresenta o TabNews, uma plataforma que busca ser um espaço online mais valioso para a comunidade de tecnologia, contrastando com as redes sociais atuais, tidas como ruidosas e focadas em publicidade. A plataforma se inspira nos antigos fóruns, valorizando conteúdos e respostas com contribuições significativas, além de desestimular interações superficiais. O sistema de TabCoins visa recompensar a criação e curadoria de conteúdo, enquanto o revenue share busca criar oportunidades para os usuários divulgarem seus trabalhos. A plataforma prioriza o valor concreto e a qualidade, além de uma cultura de respeito e empatia. O projeto é API-first, incentivando a criação de clientes e integrações, com o código aberto para toda a comunidade. Os comentários demonstram grande empolgação com a proposta, com muitos usuários expressando o desejo de contribuir e experimentar a plataforma. Há destaque para a acessibilidade da plataforma, além de discussões sobre como a ferramenta pode evoluir, com sugestões de tags, filtros e sistemas de notificação. A maioria dos comentários é positiva e expressa entusiasmo e esperança em um espaço mais saudável na internet.",
+      "summary": "O artigo apresenta o TabNews, uma plataforma que busca ser um espaço online mais construtivo para profissionais de tecnologia, em contraste com o excesso de ruído e desinformação das redes sociais tradicionais. A proposta é um ambiente com foco em conteúdo de valor, onde os usuários são incentivados a compartilhar conhecimentos e participar de discussões aprofundadas, em vez de interações superficiais. A plataforma usa um sistema de 'TabCoins' como recompensa por contribuições valiosas, e planeja um modelo de revenue share para sustentabilidade. A ausência de anúncios tradicionais e a valorização de conteúdo real são pontos fortes. Os comentários expressam forte apoio à iniciativa, com muitos usuários elogiando a proposta e a simplicidade da plataforma. Há também o compartilhamento de experiências pessoais com a programação e o desejo de participar ativamente. Alguns apontamentos são sobre melhorias na acessibilidade e em funcionalidades, como filtros e notificações. No geral, o tom é de otimismo e entusiasmo com o projeto, que é visto como um contraponto positivo à internet atual.",
       "keywords": [
-        "tecnologia",
+        "TabNews",
         "comunidade",
+        "tecnologia",
         "conteúdo",
         "valor",
         "programação",
-        "internet",
-        "fóruns"
+        "internet"
       ],
       "controversy_level": "baixo"
     }
@@ -637,15 +639,15 @@
       "Concordo contigo que matemática é importante na programação, ajuda a entender os conceitos fundamentais porque tudo provém da matemática: variáveis, constantes, funções, operadores, etc. Ao menos pro iniciante entender de onde vem esses conceitos.\nMas sou bem cétido de isso algum dia mudar, a coisa já se prostituiu de um jeito que não tem volta. As vagas hoje em dia são editais de concursos, nem a NASA tem tantos requisitos pra astronauta. O foco maior é nos frameworks e ferramentas, como se todo mundo usasse o mesmo tech-stack.\nPra piorar tem videos no YouTube pra ensinar como passar em entrevistas, como responder se perguntarem pra desenhar um back-end do Twitter ou Netflix. Vendem planos em sites que ensinam a resolver problemas que são aplicados em testes nas vagas, e os \"influencers\" vendendo cursos pros iniciantes conseguirem trampo. Criaram todo um esquema de concursado na contratação em TI que tá surreal."
     ],
     "summary": {
-      "summary": "O artigo discute a crescente negligência da matemática na programação, argumentando que a dependência excessiva de frameworks e a cultura de entrega rápida têm levado a uma geração de desenvolvedores com pouca compreensão dos fundamentos teóricos. Os comentários corroboram a ideia de que muitos profissionais da área priorizam o uso de ferramentas prontas em vez de entender os princípios matemáticos subjacentes, o que gera problemas como a dificuldade em otimizar o código e a dependência do Stack Overflow. Muitos usuários também expressaram preocupação com o modelo de ensino focado em frameworks e a falta de valorização de conhecimentos teóricos no mercado de trabalho. Alguns apontam que o mercado tem priorizado a experiência prática imediata em detrimento do conhecimento aprofundado, e outros lamentam a superficialidade dos cursos e a grande quantidade de pessoas que os abandonam. A discussão também aborda como a falta de base matemática impacta a capacidade de inovação e torna os programadores dependentes de soluções terceirizadas. Há uma concordância geral de que a matemática é fundamental para desenvolver um pensamento analítico e resolver problemas complexos, mas também uma certa descrença de que essa realidade será revertida.",
+      "summary": "O artigo discute a negligência da matemática na programação moderna, argumentando que a ênfase em frameworks e soluções prontas está criando uma geração de desenvolvedores com pouca compreensão dos fundamentos da computação. O autor critica a cultura do \"funciona na minha máquina\" e a superficialidade dos bootcamps, que priorizam habilidades práticas em detrimento do conhecimento teórico. A discussão nos comentários complementa o texto, com diversos usuários concordando sobre a importância da matemática para a programação, ressaltando que ela é essencial para o desenvolvimento de um pensamento analítico e a capacidade de resolver problemas de forma eficaz. Alguns comentários mencionam que o mercado de trabalho, ao priorizar o uso de frameworks em vez de conhecimentos fundamentais, contribui para a situação. Há também menções sobre a dificuldade de manter o foco e a disciplina nos estudos, dada a grande quantidade de informações disponíveis e o imediatismo das novas gerações. Vários usuários compartilharam links e informações complementares e manifestaram desejo de aprender os fundamentos da programação. Alguns usuários, embora concordem com a importância da matemática, expressam ceticismo sobre a possibilidade de mudança no cenário atual, devido à forte influência do mercado e à valorização de habilidades superficiais.",
       "keywords": [
         "matemática",
         "programação",
         "abstração",
         "frameworks",
-        "pensamento algorítmico",
-        "mercado de trabalho",
-        "educação"
+        "educação",
+        "mercado",
+        "pensamento algorítmico"
       ],
       "controversy_level": "médio"
     }
@@ -678,14 +680,14 @@
       "De novo essa historia? Toda postagem que vejo tem essa propaganda."
     ],
     "summary": {
-      "summary": "O artigo apresenta um panorama detalhado do crescimento do TabNews em 2024, com dados sobre visitantes, visualizações, usuários cadastrados e engajamento na plataforma. Houve um total de 2.1 milhões de visitantes e 5.7 milhões de visualizações, sendo o Google a principal fonte de tráfego. Apesar de um aumento geral em comparação com o ano anterior, o número de usuários interagindo se manteve estável, com um pico em 2023. A análise dos dados revela que a maioria dos visitantes acessa a plataforma de forma esporádica, enquanto um núcleo menor de usuários se mantém ativo. O artigo também aborda a criação de conteúdo, destacando os principais autores e a proporção entre votos positivos e negativos, que cresceu em relação aos anos anteriores. Há também dados sobre o uso do Google Search Console e do Discover para direcionar o tráfego, indicando que o conteúdo mais visto é sobre hacks de jogos, edição de registros e dicas de programação. Alguns usuários expressaram curiosidade sobre dados relacionados aos tabcoins/tabcash e sugeriram a criação de retrospectivas personalizadas. Outros notaram uma tendência de queda no engajamento desde o lançamento, mas não há consenso sobre essa avaliação, e a discussão sobre a qualidade do conteúdo e os votos negativos gerou debate. Um usuário mencionou a presença de notícias replicadas e conteúdo gerado por IA, diminuindo seu interesse na plataforma, enquanto outros pediram por mais informações sobre os votos e seus resultados, com o autor do artigo posteriormente fornecendo detalhes sobre os melhores avaliados.",
+      "summary": "O artigo apresenta um resumo detalhado das estatísticas do TabNews em 2024, incluindo o número de visitantes, visualizações, usuários cadastrados e interações. O tráfego é impulsionado principalmente pelo Google, tanto por meio de buscas quanto por recomendações. Houve um total de 2,1 milhões de visitantes e 5,7 milhões de visualizações, com picos nos meses de setembro e outubro. A maior parte dos usuários acessa o site via dispositivos móveis. A comunidade, que cria e interage com conteúdos, é considerada o alicerce da plataforma.  Embora o número de usuários interagindo não tenha crescido em relação a 2022 e 2023, o artigo destaca a importância da comunidade ativa. Alguns usuários comentaram sobre a proporção de votos positivos e negativos, questionando a qualidade do conteúdo. Outros sentiram falta de dados relacionados aos TabCoins e comparativos com anos anteriores. A necessidade de manter um histórico das estatísticas anuais foi apontada como importante para a comunidade. Um usuário chegou a relatar que não entendeu porque teve seu comentário negativado, ao citar uma fábula de um repositório de outro usuário.",
       "keywords": [
         "TabNews",
         "estatísticas",
+        "tráfego",
         "usuários",
         "visualizações",
         "Google",
-        "engajamento",
         "comunidade"
       ],
       "controversy_level": "médio"
@@ -712,53 +714,16 @@
       "Muito obrigado!"
     ],
     "summary": {
-      "summary": "O artigo discute a criação de uma biblioteca em Typescript para gerar payloads do PIX, explicando o funcionamento e estrutura desses dados. A discussão nos comentários demonstra apreciação pela biblioteca, com elogios à sua clareza e utilidade prática. Usuários mencionaram o uso da biblioteca em seus projetos, incluindo um aplicativo para PIX e o TabNews mobile, ambos desenvolvidos com Flutter. Houve também feedback positivo sobre a documentação da biblioteca e sua facilidade de uso, com comparações favoráveis em relação a outras alternativas. Alguns usuários perguntaram sobre tecnologias e frameworks usados nos projetos, e o autor compartilhou informações sobre o uso de Flutter e Dart.",
+      "summary": "O artigo apresenta uma biblioteca em Typescript para gerar payloads do PIX, explicando detalhadamente sua estrutura e funcionamento. Os comentários foram majoritariamente positivos, elogiando a clareza da explicação e a utilidade da biblioteca. Usuários compartilharam experiências com outras ferramentas e a preferência pela biblioteca apresentada. Houve um debate sobre a possibilidade de uso em projetos JavaScript e uma discussão sobre o desenvolvimento de um aplicativo relacionado. Alguns usuários expressaram interesse no código do aplicativo, enquanto outros ofereceram sugestões de melhorias para a biblioteca, como a inclusão de suporte a outros formatos.",
       "keywords": [
         "PIX",
         "Typescript",
-        "payload",
         "biblioteca",
+        "payload",
         "QRCode",
-        "Flutter",
-        "Dart"
+        "Flutter"
       ],
       "controversy_level": "baixo"
-    }
-  },
-  {
-    "title": "DeepSeek Abala o Mercado: Nvidia Perde R$ 2,4 Trilhões em 24h – O Fim da Era dos Gigantes?",
-    "link": "https://www.tabnews.com.br/PauloSampaio/deepseek-abala-o-mercado-nvidia-perde-r-2-4-trilhoes-em-24h-o-fim-da-era-dos-gigantes",
-    "content": "A recente ascensão da DeepSeek, uma startup chinesa de inteligência artificial, abalou significativamente o mercado de tecnologia. A empresa desenvolveu um modelo de linguagem semelhante ao ChatGPT, destacando-se por sua eficiência energética e custos reduzidos. Este avanço resultou em uma queda acentuada nas ações de gigantes do setor, especialmente a Nvidia, que sofreu uma desvalorização de 17,5%, representando uma perda de mais de 600 bilhões de dólares em capitalização de mercado.\nA DeepSeek conseguiu criar um modelo de IA de alto desempenho com um investimento inferior a 6 milhões de dólares, contrastando com os bilhões gastos por concorrentes ocidentais. Notavelmente, a empresa alcançou esse feito sem utilizar processadores estrangeiros de ponta, contornando as restrições de exportação impostas pelos Estados Unidos.\nAnalistas sugerem que essa inovação pode levar os principais provedores de serviços em nuvem a reavaliar seus investimentos em infraestrutura de IA. Embora alguns investidores estejam preocupados, outros acreditam que a demanda por chips de IA permanecerá robusta, impulsionada por investimentos planejados tanto por empresas ocidentais quanto pelo governo chinês.\nA notícia também impactou outros fabricantes de microchips, como a ASML, e empresas de tecnologia como Amazon, Microsoft e Alphabet, que registraram quedas em suas ações. Em contraste, a Apple, considerada menos envolvida no setor de IA, viu suas ações subirem 3%.\nEspecialistas alertam que, embora a DeepSeek tenha alcançado um marco significativo, é importante não superestimar o impacto imediato no mercado de IA. A evolução contínua da tecnologia e a necessidade de recursos computacionais avançados indicam que empresas como a Nvidia ainda desempenharão um papel crucial no futuro da inteligência artificial.",
-    "comments": [
-      "Inclusive para quem está duvidando do poder chinês, lançaram o Kimi:\nTrending: Depois do DeepSeek R1, outra startup chinesa revelou um novo modelo que supera o desempenho de Claude Sonnet 3.5 e GPT-4o.\nConheça o Kimi 1.5: um modelo multimodal com raciocínio avançado em cadeia de pensamentos e pesquisa na web em tempo real.\n100% GRATUITO com chats ilimitados. https://kimi.moonshot.cn/",
-      "A api da DeepSeek ja esta em funcionamento?\nQueria testar ela em meus projetos pessoais para ver se tem alguma melhora na questão das buscas de resultados.\nAlem disso acredito que a DeepSeek ira ganhar mais engajamento, na comunidade de IA e atá possa deixar o ChatGpt para trás, o legal seria se a DeepSeek investi-se em areas de hadware + Ia como a Nvidia (Ps: Essa questão da area dela não fui muito atras caso alguem tiver ja um conhecimento por favor me explique).",
-      "Está, é só entrar no site deles e adicionar créditos, pelo que eu vi só aceita dólar.",
-      "O pessoal só é surtado mesmo. A própria Nvidia tinha criado um fine tuning de Llama, o Nemotron que já performava bem e era barato. Inclusive a própria empresa estava provando que era possivel.\nO DeepSeek pode ter apenas feito algo muito semelhante, e os caras do nada acham que isso é prejudicial pra Nvidia. Se fosse ruim ela mesmo já não teria feito.",
-      "Eu não acompanho esse mercado de IA de perto, escuto os rumores e os boatos apenas. Mas com esse pouco de informação que tenho, até semana passada quando se falava em IA robusta já era comum associar ao uso de hardware fornecido principalmente pela nVidia, até certos processos eram criados pensando no CUDA (de propriedade da nVidia).\nO que eu percebo com a pouca informação que fui atrás, o que o DeepSeek mostrou é que não precisamos de vendor lock-in, é possível chegar no mesmo nível de capacidade usando hardware comum e menos energia. Além de tudo, é open-source e a essa altura está sendo estudado exaustivamente pelas grandes empresas e certamente nos próximos dias teremos essas IA \"fechadas\" rodando com \"inspirações\" no modelo open-source do DeepSeek.\n\n\ne os caras do nada acham que isso é prejudicial pra Nvidia\n\nPode ser que isso não afunde a nVidia, é bem difícil de acontecer mesmo, mas certamente vai frear o crescimento exponencial que ela vinha garantindo nos últimos anos.",
-      "Meus 2 cents:\nO DeepSeek de fato eh muito bom, pequeno (pelo que faz) e versatil. Mas segundo alguns pesquisadores, parte dos dados parecem ter vindo do chatGPT (alguns argumentam que foi roubo mesmo).\nDeepSeek: Is It A Stolen ChatGPT?\ndestaco: \"...The formatting, the response contents beyond the model (so called hallucination), the programming mistakes, the exposed underlying training data all clearly show that the model has nothing in common with Gemini, Grok, Claude or Mistral. Yet, the similarities with ChatGPT are strikingly obvious...\"\nEnfim, o negocio eh usar o DeepSeek-R1 enquanto for possivel - o observar a briga dos tubaroes com o balde de pipoca no colo.",
-      "É meus amigos, somos espectadores e 'protagonistas' da nova 'corrida espacial'...",
-      "O mercado financeiro caindo no conto de fadas chinês!\nOs caras falam (sem provas) que são superiores (economicamente) em uma tecnologia, no dia seguinte o mercado afunda.\nDaqui a uns dias sai notícias dizendo que \"não é bem assim\" e sobe tudo denovo.",
-      "Algumas correções apenas, não disseram nada sem provas, o benchmark está bem detalhado no hugging face. O código é aberto inclusive para refutar a ideia. O paper fala sobre a forma como foi construído e o custo. Inclusive é um dos poucos modelos que é possível pra mim rodar localmente no meu notebook batata.\nSegundo, apesar de não ser o caso, 90% do mercado financeiro opera no boato. Isso desde sempre. Não é nenhuma surpresa",
-      "Otima resumo Kaique, acredito que, sim houve uma queda no mercado financeiro por causa da nova IA, mas acredito em duas Hipotéses.\nA 1° onde a DeepSeek supere as IAs de hoje em dia e possa a vir ser uma das melhores Ias otimizadas e utilizadas, tanto no mercado de hadware (como Nvidia) como no mercado popular (como o ChatGpt).\nA2° onde a DeepSeek fez essa queda no mercado financeiro e as empresas como Nvidia e OpenIa e a Microsoft busquem melhores forma de performance para suas IAS.\nSomente minha Opnião...",
-      "De certa forma é uma ironia. Porque a China gasta muito pra poder espionar o restante do mundo. E agora eles tem uma solução de IA onde o resto do mundo vai lá pra validar documentos, código, e qualquer outro tipo de artefato que a IA deles possa ajudar na confecção. Pode tirar dúvidas também, do que as pessoas estão interessadas, e tudo ficando registrado. É a melhor forma de vigilância sem ter que se preocupar com denúncias. Por isso acho que eles vão melhorar ainda mais a solução e manter gratuito por bem mais tempo...",
-      "Eu vou tomar cuidado com as informações que coloco lá porque concordo com sua resposta em partes",
-      "Uma duvida real, onde consigo encontrar informacoes sobre a China espiano o mundo inteiro? Tambem me explica melhor, considerando que eles soltaram algo open source, ainda assim caberia dizer que eles querem espionar o mundo usando essa nova ferramenta?",
-      "Que a China fica espionando outros estados é uma questão antiga, que ganhou força com o lançamento do 5G e algumas empresas chinesas criando dispositivos com backdoor. Isso foi notícia e continua sendo faz tempo. Só procurar no google, tem até artigo na wikipedia relacionando e acumulando todos os casos.\nhttps://en.wikipedia.org/wiki/Concerns_over_Chinese_involvement_in_5G_wireless_networks\nhttps://en.wikipedia.org/wiki/List_of_Chinese_spy_cases_in_the_United_States\nhttps://en.wikipedia.org/wiki/2018_China%E2%80%93African_Union_espionage_allegations\nhttps://www.brookings.edu/articles/chinese-spies-and-the-security-of-americas-networks/\nhttps://www.cfr.org/backgrounder/chinas-huawei-threat-us-national-security\nO caso que ocorreu na áfrica ficou famoso, porque especialistas descobriram que realmente tinha backdoor/transmissor nos aparelhos.\nhttps://chinaglobalsouth.com/analysis/china-accused-again-of-spying-on-the-african-union/\nhttps://futureafrica.net/so-china-is-spying-on-the-african-union-who-is-surprised/\nAlguém implementando algo open source não significa altruismo. O npm and PyPI enfrentam problemas com código malicioso em libs open source.\nhttps://www.cisoadvisor.com.br/descobertos-mais-de-700-pacotes-maliciosos-de-codigo-aberto/",
-      "Obrigado pelos links!\nFonte: Wikipedia, autores do US ou apoiadores de Trump (nada contra, mas enviesa muito a opiniao)\nDe certa forma, imagino que eles espiam algo sim, mas acho engracado esse vies que criamos quando se trata de algo da China, quando se trata de coisas do US ou UE, esta tudo bem.\nExemplo bem simples:Mapa da espionagem do US\nSobre o PyPl, a excessao virando regra. Eu acho que diretamente no chat deles pode ser mesmo que eles estejam monitorando, mas na lib open source que eles liberaram? Duvido que tenham backdors. Talvez no futuro, mas agora? Com todo mundo de olho?\nApenas de liberar isso mostra o quanto forte eles estao nessa area e enfraquece o US, vamos ver agora a resposta do US a isso. A guerra das IAs...",
-      "Então, eu também acho que não será coisa do tipo backdoor. Acho que será algo do tipo, salvar tudo, deixar tudo guardado para monitorar e espiar o que o resto do mundo ta fazendo. Tipo o lance do TikTok, que registra na ByteDance tudo que puder coletar dos celulares dos usuários. E isso acaba sendo analisado pelo governo chinês.\nMas o lance da IA é que ela é treinada com conteúdo produzido por humanos, porque se usar conteúdo produzido por outras IA's acaba gerando halucinação mais rapidamente. E quanto mais pessoas usarem, maior o conteúdo pra treinamento. E se puder além de usar os dados pra treinar, contribuir com a política de vigilância, melhor ainda pra eles. Não tenho dúvida que vão coletar e registrar o máximo possível..."
-    ],
-    "summary": {
-      "summary": "O artigo discute o impacto da DeepSeek, uma startup chinesa de IA, no mercado de tecnologia, especialmente na Nvidia, que sofreu uma grande queda nas ações. A DeepSeek desenvolveu um modelo de linguagem eficiente e de baixo custo, desafiando o domínio de grandes empresas de IA. Os comentários refletem um debate sobre o potencial da DeepSeek, com alguns usuários expressando preocupação com possíveis roubos de dados e espionagem por parte da China, enquanto outros destacam a natureza open-source do projeto e seu potencial para descentralizar o mercado de IA. Há também discussão sobre o impacto no mercado financeiro e a possibilidade de uma nova corrida na área de IA. Alguns usuários acreditam que a DeepSeek pode superar as IAs existentes, enquanto outros veem a queda nas ações como uma reação exagerada do mercado, mas todos concordam com o grande avanço tecnológico.",
-      "keywords": [
-        "DeepSeek",
-        "IA",
-        "Nvidia",
-        "mercado financeiro",
-        "open source",
-        "China",
-        "espionagem"
-      ],
-      "controversy_level": "médio"
     }
   },
   {
@@ -771,15 +736,15 @@
       "Cara, acho que você é o pai do Cris."
     ],
     "summary": {
-      "summary": "O artigo relata a experiência de um profissional que conciliou múltiplos empregos simultaneamente, abordando os desafios e estratégias utilizadas para manter a produtividade e evitar o esgotamento. Ele descreve como a organização flexível de horários e a comunicação transparente com as empresas foram cruciais para o sucesso. O autor critica contratos sem horas estipuladas e a falta de transparência por parte de alguns gestores, destacando a importância de priorizar a carreira e o desenvolvimento de soft skills. Os comentários validam a dificuldade de manter múltiplos empregos e o impacto da organização no dia a dia. Um usuário compartilha uma experiência negativa com uma professora e outro se surpreende com a rotina descrita, ressaltando a importância de se adaptar aos poucos.",
+      "summary": "O artigo relata a experiência do autor em conciliar múltiplos empregos simultaneamente, variando entre dois e quatro trabalhos ao longo de quatro anos. Ele descreve a dificuldade inicial em manter horários fixos para cada empresa e como essa estratégia se mostrou inviável. A solução encontrada foi tratar todos os trabalhos como um só, definindo prioridades de acordo com a demanda do momento e comunicando essa dinâmica às empresas. O autor também compartilha desafios, como lidar com gestores desorganizados, e a importância de se posicionar de forma transparente para proteger sua reputação. Ele conclui que essa experiência o levou a priorizar a liderança em detrimento do papel de especialista. Os comentários refletem diferentes perspectivas sobre ter mais de um emprego. Um usuário relata uma experiência negativa, enquanto outro se impressiona com a organização do autor e afirma que ter apenas um emprego é o melhor caminho. Um terceiro comentário faz uma referência humorística.",
       "keywords": [
         "múltiplos empregos",
-        "gestão de tempo",
+        "organização",
         "transparência",
+        "gestão",
+        "prioridades",
         "liderança",
-        "priorização",
-        "carreira",
-        "soft skills"
+        "carreira"
       ],
       "controversy_level": "baixo"
     }
@@ -797,15 +762,15 @@
       "falou exatamente oq estava pensando"
     ],
     "summary": {
-      "summary": "O artigo discute o DeepSeek, uma nova IA de código aberto que busca ser mais eficiente e menos dependente de hardware. Os comentários expressam opiniões cautelosas, apontando que ainda é cedo para avaliar o impacto total da tecnologia. Alguns usuários duvidam das alegações de redução drástica no consumo de hardware e energia, enquanto outros temem que o desenvolvimento do DeepSeek possa estar relacionado à espionagem industrial. Apesar das reservas, a iniciativa de criar uma IA mais acessível e com menor dependência de recursos é vista com bons olhos. Há também uma concordância de que as flutuações de mercado são especulativas e que o valor real das empresas é incerto. Alguns usuários criticam a qualidade inicial do DeepSeek em comparação com outras IAs. A discussão sugere uma polarização entre o ceticismo e o otimismo cauteloso em relação ao futuro da tecnologia.",
+      "summary": "O artigo discute o impacto da DeepSeek, uma nova IA com código aberto, no mercado de tecnologia, argumentando que ela desloca o foco do hardware para o software, acelerando o progresso e reduzindo barreiras financeiras. Os comentários expressam ceticismo quanto às alegações de redução drástica na necessidade de hardware e energia, e questionam a veracidade e o impacto real da tecnologia. Alguns levantam suspeitas sobre a origem da DeepSeek, sugerindo espionagem industrial e roubo de propriedade intelectual. Há também opiniões sobre o desempenho inicial da IA, com relatos de resultados inconsistentes, embora se reconheça o potencial do código aberto e a importância da redução da dependência de hardware. Alguns usuários afirmam que o mercado é especulativo e a tecnologia é uma arma de espionagem, mas há quem prefira uma abordagem pragmática e custo-benefício.",
       "keywords": [
         "DeepSeek",
         "inteligência artificial",
-        "software",
         "hardware",
+        "software",
         "código aberto",
         "mercado",
-        "IA"
+        "especulação"
       ],
       "controversy_level": "médio"
     }
@@ -825,15 +790,15 @@
       "Hahaha, bem isso. Tem cada projeto maluco com Doom. A galera é muito criativa. Obrigado man pela força <3"
     ],
     "summary": {
-      "summary": "O artigo discute um projeto onde o jogo Doom foi executado na barra de pesquisa do Google, utilizando Python e JavaScript. A implementação envolveu a injeção de código JavaScript personalizado no navegador. Os comentários dos usuários expressam surpresa e admiração pela façanha, com alguns pedindo explicações mais detalhadas do processo e tecnologias envolvidas. O autor respondeu que compartilhará mais detalhes em breve, e que o código completo não pode ser divulgado por ser parte de um projeto comercial sob NDA. No entanto, ele se mostrou disposto a criar um exemplo simplificado. Os usuários elogiaram a criatividade do autor, destacando a complexidade do projeto.",
+      "summary": "O artigo descreve um projeto em que o jogo Doom foi renderizado na barra de pesquisa do Google utilizando Python e a biblioteca Selenium para injetar JavaScript. Os comentários expressam admiração pela criatividade do projeto e curiosidade sobre o processo de desenvolvimento, com alguns usuários pedindo mais detalhes sobre as etapas e tecnologias utilizadas. O autor se dispôs a compartilhar uma explicação mais detalhada em uma futura publicação, mas não pode divulgar o código fonte da engine por ser um projeto comercial protegido.  A discussão demonstra um tom positivo e engajado, com foco na inovação do projeto.",
       "keywords": [
         "Doom",
         "Google",
-        "Python",
         "JavaScript",
+        "Python",
         "Selenium",
         "Webdriver",
-        "criatividade"
+        "Jogos"
       ],
       "controversy_level": "baixo"
     }
@@ -844,7 +809,7 @@
     "content": "Finalizando a sequência dos posts sobre o livro \"The Pragmatic Programmer: from journeyman to master” (Andrew Hunt e David Thomas) ou em português “O Programador Pragmático: de Aprendiz a Mestre”, onde estou publicando minhas anotações do livro aqui no TabNews para compartilhar o conhecimento de forma mútua.\nLink dos posts anteriores:\n\nPrefácio e Capítulo 1\nCapítulo 2\nCapítulos 3 e 4\nCapítulos 5 e 6\n\nP.S: Ressalto que eu li a 1a Edição de 1999 em inglês. São minhas anotações pessoais, com tradução de termos e ideias próprias, logo poderão ter informações que na tradução em português oficial estejam diferentes (ou até erradas). A ideia não é ser, necessariamente, um resumo/resenha do livro, mas de pontuar algumas ideias que eu entendi serem interessantes a compartilhar.\n\nCapítulo 7 - Before The Project (Antes do Projeto)\nVocê já teve a sensação de que o seu projeto está condenado antes mesmo de iniciar? Muitas vezes ele pode estar condenado a menos que você estabeleça algumas regras básicas primeiro.\n\nResolvendo quebra cabeças impossíveis\n\nThe Requirements Pit (O poço de requisitos)\n\nNão ajunte requisitos, cave por eles\nOs requisitos não vão estar lá quando você for procurar, você terá que fazer um esforço para descobrí-los\nPara isso requer algo que é simples e complexo ⇒ A resposta simples é que os requerimentos são coisas que precisam ser cumpridas. Bons requerimentos podem incluir:\n\nUm registro só pode ser visto por um grupo de pessoas\nUm medidor não pode exceder um valor crítico\nO editor irá marcar algumas palavras chaves que serão selecionadas dependendo do tipo de arquivo a ser editado\n\n\nNo caso do registro que só pode ser visto por um grupo de pessoas irá levar para um regras de permissões e como isso serão relacionadas aos usuários ⇒ O requerimento na verdade não é sobre um grupo de pessoas ver um arquivo, mas sobre as permissões gerais.\nTrabalhe com o usuário para pensar como um usuário\nDocumente os requerimentos\n\nAbstrações vivem mais do que detalhes ⇒ Não tente prever o futuro, detalhes podem mudar. Foque em abstrações para serem implementadas posteriormente\nMantenha uma linguagem ubíqua ⇒ Tenha um glossário para o projeto para evitar confusões de definições de termos (pode haver uma diferença entre ‘client’ e ‘customer’ por exemplo)\n\n\n\nSolving Impossible Puzzles (Resolvendo quebra-cabeças impossíveis)\n\n\nPodemos lidar com projetos realmente muito difíceis de lidar, como se fossem quebra cabeças. Soluções “óbvias” não estão funcionando.\n\n\nO segredo para resolver problemas difíceis é identificar restrições reais (e não imaginadas) ⇒ Restrições reais devem ser honradas, mesmo que sejam estranhas.\n\n\nNão pense fora da caixa, encontre a caixa ⇒ Saiba onde estão os limites do domínio e das condições.\n\n\nNot Until You’re Ready (Não até que você esteja pronto)\n\nOuça as dúvidas persistentes - comece quando estiver pronto\nEscrever uma especificação é praticamente uma responsabilidade\nCuidado para não estar procrastinando, ao invés de estar sendo realmente cauteloso\nMuitas coisas são melhores feitas do que descritas\nComo um Programador Pragmático você deve ver os requisitos coletados, designed e implementados de diferentes formas no mesmo processo.\n\n\n\nCircles and Arrows (Círculos e Setas)\n\nNão seja escravo de métodos formais ⇒ Existem vários tipos de formatos para esquematizar um projeto, mas não se prenda a isso\nA maioria dos métodos formais usam diagramas e algumas palavras específicas para definir partes do projeto. Mas muitos dos diagramas podem ser sem sentido se não forem de fato implementados.\nMétodos formais podem encorajar uma especialização que pode não ser necessária. Pode acontecer de levar para uma comunicação pobre e uma perda de esforços. Também pode levar a um embate entre desingners e desenvolvedores.\nFerramentas caras não produzem melhores designs\n\n\nCapítulo 8 - Pragmatics Projects (Projetos Pragmáticos)\nAssim como seus projetos podem ir seguindo, nós precisamos mudar o nosso foco de problemas de filosofias individuais e de código para problemas grandes, do tamanho do projeto.\nPragmatic Teams (Times pragmáticos)\n\nPodemos usar as ideias que vimos até aqui para os times\nNo Broken Windows ⇒ Qualidade é um problema do time. O mais diligente dos desenvolvedores terá que lidar com problemas de qualidade envolvendo o time, e não só isso, mas ter ânimo para tal, gastando tempo consertando problemas.\n\nTimes não devem tolear broken windows, ou seja, aquelas imperfeições que ninguém conserta. O time deve tomar a responsabilidade pelo produto.\n\n\nBoiled Frogs ⇒ Times que não são vigilantes podem acabar como o sapo que morreu cozido na água que foi se fervendo gradativamente. Pessoas acham que alguém está lidando com um problema, ou que o tech lead deve ter aceitado uma mudança que um usuário está querendo.\n\nFaça questão que todos do time monitorem as mudanças no ambiente, talvez colocando alguém como responsável por averiguar possíveis mudanças.\nÉ preciso estar ciente das mudanças, caso contrário a água vai ferver e você não vai sentir.\n\n\nComunicação ⇒ O pior para um time é não ter uma comunicação efetiva. Desde acharem várias coisas sem saber se de fato deve seguir dessa maneira, até ninguém se comunicar em uma reunião.\n\nDocumentação e linguagem são bagunçadas, cada um usa termos diferentes para a mesma coisa.\nTimes de bons projetos são estruturados e são preparados para qualquer tipo de reunião.\n\n\nDRY ⇒ Duplicações podem levar a pesadelos. Quando o projeto começa a crescer, tente deixar alguém responsável pela biblioteca do projeto. Se for muito grande, estabeleça pontos focais para evitar duplicações.\nOrtogonalidade ⇒ As coisas em um projeto não devem andar de formas isoladas. Simplesmente não dá. Trabalhe em função de uma funcionalidade e não de funções de um cargo.\n\nDeixe que os times se organizem de forma autônoma\nÉ necessário duas cabeças, uma que vá pensar de forma administrativa e outra de forma técnica, para impedir que padrões sejam deixados de lado.\n\n\n\nUbiquitous Automation (Automação ubíqua)\n\nAll on Automatic ⇒ Não use procedimentos manuais\n\nPessoas não são tão repetitivas quanto computadores o são. Coisas que deveriam funcionar começam a parar de funcionar porque não automatizamos procedimentos\n\n\nTestes de Regressão ⇒ Seja capaz de testar todo o projeto com apenas um botão\nBuild Automation\n\nConfira o código fonte no repositório\nCrie um projeto do zero com um número da versão\nCrie uma imagem distribuível\nExecute testes específicos\n\n\nApproval Procedures\n\nAlguns projetos possuem workflows administrativos variados que devem ser seguidos\n\n\n\nRuthless Testing (Teste implacavelmente)\n\nMuitos desenvolvedores odeiam testar ⇒ Muitas vezes os testes que eles fazem são enviesados.\n\nTeste cedo, durante e automatizado\n\n\nDevemos testar desde cedo quando fazemos um código ⇒ Se não o código começa a crescer e vai ficando cade vez mais difícil testar\nQuanto mais cedo um bug for encontrado, mais barata é a sua medicação ⇒ Code um pouco, teste um pouco\n\nCoding não está finalizado até que todos os testes estejam executados\nUnit tests\nIntegration tests\nValidação e verificação\nExaustão de recursos, erros e recuperação\nTestes de performance\nTestes de usabilidade\n\n\nUse sabotadores para testar seus testes\nNão tem como sabermos se nossos testes estão testando todo o código de forma suficiente\n\nPodemos até usar alguma ferramente de coverage testes\n\n\nAche bugs uma única vez ⇒ Se você está tendo o mesmo bug mais de uma vez, é porque seus testes não estão bons.\n\nIt’s All Writing (É tudo sobre escrever)\n\nA tinta mais branda é melhor do que a melhor memória\nDesenvolvedores não ligam muito para documentação ⇒ Programadores pragmáticos abraçam a documentação como parte integral do seus processo de desenvolvimento\n\nEscrever uma documentaçõa pode ser fácil por não duplicar esforços, ou perder tempo e mandar a documentação o mais próximo do código, se possível\n\n\nDois tipos de documentação: interna e externa\n\nComentários em código ⇒ Código deve ter comentários, mas não muitos. Comente coisas que não são tão óbvias como funcionalidades.\n\nNomes de variáveis devem ser escolhidas com cuidado, devendo ter algum significado, e ter cuidado para não significar algo diferente do que você tenha planejado\n\n\nSua documentação precisa ser de fácil acesso e não se perder. Não adianta querer imprimir a documentação e engavetá-la ou até mesmo deixá-la se perder. Coloque-a na web ou algo do tipo.\n\n\n\nGreat Expectations (Grandes expectativas)\n\nGentilmente exceda as expectativas dos seus usuários\nComunique e alinhe expectativas\nFaça a milha extra ⇒ Trabalhe perto dos seus usuários, compartilhe suas expectativas e os comunique do que você está fazendo para que eles não se surpreendam quando o projeto for entregue. NÃO TENTE SURPREENDER SEU USUÁRIO.\n\nPride and Prejudice (Orgulho e prejuízo)\n\nAssine seu trabalho ⇒ Programadores pragmáticos não esquivam de suas responsabilidades. Antes nós nos regozijamos em aceitar novos desafios e aumentarmos nossas expertises.\n\n\nE aí pessoal, o que vocês acharam? Toda contribuição é bem vinda!",
     "comments": [],
     "summary": {
-      "summary": "O artigo resume os capítulos 7 e 8 do livro 'The Pragmatic Programmer', abordando temas cruciais para o desenvolvimento de software. O capítulo 7 enfatiza a importância de entender e documentar os requisitos, trabalhar com abstrações, manter uma linguagem consistente e resolver problemas complexos identificando restrições. Também discute sobre a necessidade de estar pronto antes de iniciar um projeto e não se prender a métodos formais. Já o capítulo 8, foca nos aspectos de projetos pragmáticos, como a importância da qualidade, comunicação em equipe, automação, testes rigorosos, documentação e alinhamento de expectativas. O autor destaca a importância de times auto-organizados, a necessidade de automação, a prática de testes contínuos e a escrita de documentação clara. O artigo termina reforçando o valor de superar expectativas e assumir responsabilidades no processo de desenvolvimento.",
+      "summary": "O artigo resume os capítulos 7 e 8 do livro 'O Programador Pragmático', focando em práticas para antes e durante o projeto. No capítulo 7, são abordadas a importância de extrair e documentar requisitos, usar abstrações, manter uma linguagem clara e lidar com restrições. O capítulo 8 trata de times pragmáticos, enfatizando comunicação, qualidade, automação, testes rigorosos, documentação e gerenciamento de expectativas. O texto destaca a necessidade de times serem vigilantes, autônomos, e responsáveis pela qualidade do produto. Não foram detectados comentários ou discussões no artigo.",
       "keywords": [
         "requisitos",
         "abstrações",
@@ -853,6 +818,28 @@
         "testes",
         "documentação",
         "expectativas"
+      ],
+      "controversy_level": "baixo"
+    }
+  },
+  {
+    "title": "[PITCH] Recriando o Counter Strike para o Playstation 2 (PART 2)",
+    "link": "https://www.tabnews.com.br/GustavoFurtadoFatality/pitch-recriando-o-counter-strike-para-o-playstation-2-part-2",
+    "content": "Esta é a parte 2\nVideo\nOque foi adicionado?\n\nArrumar bugs de camera\nMelhorar o sistema de Arma\nAdicionar a arma Ak47(apenas animação de Idle, e ao usar o R2 atirar)\nAdicionar a arma Usp(apenas animação de Idle)\nApertar Triângulo para mudar de arma\nAdicionar balanço de arma ao andar\n\nComo jogar?\nPCSX2: Extraia o RAR dos releases, depois, nas configurações do emulador ative \"hostfile system\"\nPS2(não funcionando direito ainda): Estou tendo uns problemas ao fazer funcionar no ps2, como alguns problemas de carregamento e talvez tenha alguns probleminhas depedendo da sua versão do console\nGithub\nVou fazer uma 0.2.0_1 pra corrigir esse erro de não rodar no PS2 direito",
+    "comments": [
+      "Se eu fosse herdeiro, te financiava.\nSeria uma boa um financiamento coletivo, divulgar em inglês vai ter entusiastas de todos os cantos",
+      "Muito top, o jogo já tá criando forma! Ver esse vídeo me trouxe boas lembranças da época das lan houses. Tá ficando incrível, mano. Parabéns pelo trampo, ansioso pra ver as próximas versões! 🔥🎮"
+    ],
+    "summary": {
+      "summary": "O artigo apresenta a segunda parte do desenvolvimento de uma recriação do jogo Counter Strike para o Playstation 2. O autor detalha as melhorias implementadas, incluindo correção de bugs na câmera, aprimoramento do sistema de armas, adição da AK47 e USP (com animações), mudança de arma com o botão triângulo e balanço de arma ao andar. Ele também explica como jogar no emulador PCSX2 e menciona problemas na execução no console PS2. Os comentários são positivos, com elogios ao progresso do projeto, nostalgia da época das lan houses e sugestões de financiamento coletivo, incluindo divulgação em inglês.",
+      "keywords": [
+        "Counter Strike",
+        "Playstation 2",
+        "desenvolvimento de jogos",
+        "emulador",
+        "PCSX2",
+        "lan houses",
+        "jogos retrô"
       ],
       "controversy_level": "baixo"
     }
