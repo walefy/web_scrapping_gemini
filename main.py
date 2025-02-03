@@ -69,7 +69,7 @@ def main():
 
         article_item_soup = BeautifulSoup(driver.page_source, 'html.parser')
         articles_inside_item: ResultSet[Tag] = article_item_soup.find_all('article')
-        articles_inside_item_strs = [a.find('div', { 'class': 'markdown-body' }).text for a in articles_inside_item]
+        articles_inside_item_strs = [validate_tag(a.find('div', { 'class': 'markdown-body' })).text for a in articles_inside_item]
 
         article_item.content = articles_inside_item_strs[0]
         article_item.comments = articles_inside_item_strs[1:]
