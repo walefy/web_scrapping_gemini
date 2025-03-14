@@ -6,6 +6,7 @@ import os
 import json
 from selenium import webdriver
 from bs4 import BeautifulSoup, Tag, ResultSet
+from urllib.parse import urlparse
 from typing import List
 from dotenv import load_dotenv
 from time import sleep
@@ -42,6 +43,9 @@ def main():
     ai_service = AIService(agent=agents.SUMMARIZE_ARTICLE_AGENT)
     tts_service = TTSService()
 
+    parsed_url = urlparse(BASE_URL)
+    base_url_cropped = f"{parsed_url.scheme}://{parsed_url.netloc}"
+
     os.environ['MOZ_HEADLESS'] = '1'
     driver = webdriver.Firefox()
     driver.get(BASE_URL)
@@ -62,7 +66,7 @@ def main():
         div_item = validate_tag(aside_item.findChild())
         link_item = validate_tag(div_item.findChild())
 
-        link_url = BASE_URL + str(link_item.get('href'))
+        link_url = base_url_cropped + str(link_item.get('href'))
         title = link_item.text
 
         article_item = ArticleItem(title=title, link=link_url)

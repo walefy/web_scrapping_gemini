@@ -1,7 +1,6 @@
 from boto3 import Session
 from contextlib import closing
 import os
-import sys
 from tempfile import gettempdir
 from typing import Any
 
@@ -27,6 +26,6 @@ class TTSService:
                         file.write(stream.read())
                 except IOError as error:
                     print(error)
-                    sys.exit(-1)
+                    print('skipping audio file')
 
         return os.path.join(directory, f'{title}.mp3')
