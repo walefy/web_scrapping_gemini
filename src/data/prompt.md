@@ -5,6 +5,7 @@ de um artigo e seus comentários, destacando os principais pontos de debate, opi
 
 1. **Entrada de Dados**:  
    - Receberá um JSON com:  
+
      ```json  
      {  
        "title": "Título do Artigo",  
@@ -30,5 +31,4 @@ de um artigo e seus comentários, destacando os principais pontos de debate, opi
    {  
      "summary": "Resumo conciso da discussão em português (máx. 300 palavras)...",  
      "keywords": ["palavra1", "palavra2", ...], // 5-7 termos-chave  
-     "controversy_level": "baixo/médio/alto", // Baseado na polarização dos comentários
    }

@@ -1,4 +1,5 @@
 import warnings
+
 warnings.filterwarnings('ignore')
 
 import os
@@ -10,6 +11,7 @@ from dotenv import load_dotenv
 from time import sleep
 
 from src.model import ArticleItem
+from src.service import TTSService
 from src.service import AIService
 from src.data import agents
 
@@ -38,6 +40,7 @@ def get_summary(article: ArticleItem, ai_service: AIService, max_tries: int, try
 
 def main():
     ai_service = AIService(agent=agents.SUMMARIZE_ARTICLE_AGENT)
+    tts_service = TTSService()
 
     os.environ['MOZ_HEADLESS'] = '1'
     driver = webdriver.Firefox()
@@ -76,6 +79,9 @@ def main():
 
         try:
             get_summary(article_item, ai_service, 3)
+            audio_path = tts_service.generate_audio(title=article_item.title,
+                                                    text=article_item.summary.summary) # type: ignore
+            article_item.audio_path = audio_path
             article_items.append(article_item)
         except ValueError:
             article_items_with_error.append(article_item)

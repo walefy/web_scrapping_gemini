@@ -1,9 +1,12 @@
 [project]
 dependencies = [
+  "boto3>=1.37.12",
   "bs4>=0.0.2",
   "google-genai>=0.8.0",
+  "marqo>=3.11.0",
   "python-dotenv>=1.0.1",
   "selenium>=4.28.1",
+  "streamlit>=1.43.2",
 ]
 description = "Webscrapping from TabNine"
 name = "issues-web-scrapping"

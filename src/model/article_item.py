@@ -8,6 +8,7 @@ class ArticleItem(BaseModel):
 
     content: str | None = None
     comments: List[str] | None = None
+    audio_path: str | None = None
     summary: AIResponse | None = None
 
     def __str__(self) -> str:
